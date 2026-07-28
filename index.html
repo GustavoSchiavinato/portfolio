@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio profissional de Gustavo Henrique Schiavinato Rezende — Analista de Sistemas, Sustentação, ERP e SQL Server.">
+<meta name="author" content="Gustavo Henrique Schiavinato Rezende">
+<title>Gustavo Schiavinato | Analista de Sistemas & Sustentação</title>
+
+<style>
+:root{
+  --bg:#07111f;--bg2:#0b1728;--card:rgba(16,31,51,.78);--text:#edf5ff;
+  --muted:#a9b9cd;--accent:#55e6cf;--blue:#62a8ff;--line:rgba(255,255,255,.10);
+  --shadow:0 24px 70px rgba(0,0,0,.30);--radius:22px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2),var(--bg));color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:100;background:rgba(7,17,31,.84);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.2rem;font-weight:900;letter-spacing:.5px}.logo span{color:var(--accent)}
+.menu{display:flex;gap:24px;color:var(--muted);font-size:.9rem;font-weight:600}
+.menu a:hover{color:var(--accent)}
+.hero{min-height:calc(100vh - 70px);display:flex;align-items:center;padding:75px 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:650px;height:650px;right:-220px;top:-220px;background:radial-gradient(circle,rgba(98,168,255,.18),transparent 67%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:70px;align-items:center}
+.badge{display:inline-block;border:1px solid rgba(85,230,207,.28);background:rgba(85,230,207,.07);color:var(--accent);padding:7px 13px;border-radius:99px;font-size:.78rem;font-weight:800;letter-spacing:1px}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-5px;margin:24px 0}
+.gradient{background:linear-gradient(100deg,#fff,var(--blue),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-text{font-size:1.18rem;color:var(--muted);max-width:730px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 18px;border:1px solid var(--line);border-radius:11px;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-3px);border-color:rgba(85,230,207,.4)}
+.btn.primary{background:var(--accent);color:#05201c;border-color:var(--accent)}
+.profile{background:linear-gradient(145deg,rgba(23,44,70,.88),rgba(11,23,40,.86));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 22px;border:4px solid rgba(85,230,207,.55);background:#13243a}
+.photo-note{font-size:.75rem;color:var(--muted);text-align:center;margin-top:-12px;margin-bottom:18px}
+.profile h3{text-align:center;font-size:1.1rem}.profile p{text-align:center;color:var(--muted);font-size:.9rem;margin-top:5px}
+.profile-stat{border-top:1px solid var(--line);padding:15px 0;margin-top:15px}
+.profile-stat strong{display:block;font-size:1.35rem}.profile-stat span{font-size:.84rem;color:var(--muted)}
+section{padding:100px 0}
+.section-head{max-width:780px;margin-bottom:45px}
+.eyebrow{text-transform:uppercase;color:var(--accent);font-size:.76rem;font-weight:900;letter-spacing:2px}
+h2{font-size:clamp(2.1rem,4vw,3.5rem);line-height:1.05;letter-spacing:-2px;margin:10px 0 17px}
+.muted{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:27px}
+.card h3{margin:8px 0}.card p{color:var(--muted);font-size:.94rem}
+.icon{font-size:1.7rem}
+.skills{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:8px 12px;border:1px solid var(--line);border-radius:99px;background:rgba(255,255,255,.035);font-size:.87rem}
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tech{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:17px;padding:21px}
+.tech h3{font-size:1rem}.tech p{color:var(--muted);font-size:.87rem;margin-top:7px}
+.timeline{position:relative;margin-left:10px}.timeline:before{content:"";position:absolute;left:8px;top:5px;bottom:5px;width:1px;background:var(--line)}
+.job{position:relative;padding-left:45px;margin-bottom:50px}.dot{position:absolute;left:1px;top:8px;width:15px;height:15px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 6px rgba(85,230,207,.10)}
+.date{font-size:.85rem;color:var(--blue);font-weight:800}.job h3{margin:5px 0}.job ul{padding-left:20px;color:var(--muted)}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.case{position:relative;overflow:hidden}.case-label{color:var(--accent);font-weight:900;font-size:.75rem;letter-spacing:1px}
+.case h3{font-size:1.25rem}.case p{margin-top:9px}
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.impact-card{text-align:center;background:linear-gradient(145deg,rgba(85,230,207,.08),rgba(98,168,255,.06));border:1px solid var(--line);padding:28px;border-radius:20px}
+.impact-card strong{font-size:2.2rem;display:block;color:var(--accent)}.impact-card span{color:var(--muted);font-size:.9rem}
+.education{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contact{background:linear-gradient(135deg,rgba(85,230,207,.10),rgba(98,168,255,.10));border:1px solid var(--line);border-radius:28px;padding:52px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:.85rem}
+@media(max-width:900px){
+ .hero-grid,.grid2{grid-template-columns:1fr}.cards,.tech-grid{grid-template-columns:repeat(2,1fr)}
+ .case-grid,.education{grid-template-columns:1fr}.impact{grid-template-columns:1fr 1fr}.menu{display:none}
+}
+@media(max-width:560px){
+ section{padding:70px 0}.cards,.tech-grid,.impact{grid-template-columns:1fr}
+ h1{letter-spacing:-3px}.hero{padding:55px 0}.contact{padding:30px}.profile{max-width:380px;margin:auto}
+}
+</style>
+</head>
+
+<body>
+<nav>
+<div class="container nav">
+  <div class="logo">Gustavo Henrique Schiavinato Rezende<span>.</span></div>
+  <div class="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#competencias">Competências</a>
+    <a href="#carreira">Carreira</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#cases">Cases</a>
+    <a href="#formacao">Formação</a>
+    <a href="#contato">Contato</a>
+  </div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="badge">ANALISTA DE SISTEMAS · SUSTENTAÇÃO · ERP · SQL SERVER</span>
+    <h1>Experiência para transformar <span class="gradient">problemas em soluções.</span></h1>
+    <p class="hero-text">
+      Profissional de tecnologia com mais de 20 anos de experiência em ambientes corporativos,
+      unindo suporte, sustentação de sistemas, ERP, SQL Server, análise de incidentes,
+      dados e homologação. Minha trajetória conecta tecnologia e negócio com foco em
+      confiabilidade, resolução de problemas e melhoria contínua.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="#carreira">Conheça minha trajetória →</a>
+      <a class="btn" href="https://www.linkedin.com/in/gustavo-schiavinato/" target="_blank">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/GustavoSchiavinato" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+
+  <aside class="profile">
+    <!-- OPÇÃO 1: coloque aqui o endereço da sua foto do GitHub -->
+    <!-- Exemplo: https://raw.githubusercontent.com/GustavoSchiavinato/GustavoSchiavinato/main/foto.jpg -->
+    <img class="photo"
+         src="https://github.com/GustavoSchiavinato.png"
+         alt="Foto de Gustavo Henrique Schiavinato Rezende"
+         onerror="this.style.display='none'">
+    <div class="photo-note">Foto carregada diretamente do perfil público do GitHub</div>
+    <h3>Gustavo Henrique Schiavinato Rezende</h3>
+    <p>Curitiba / Paraná</p>
+    <div class="profile-stat"><strong>20+ anos</strong><span>de experiência profissional em TI</span></div>
+    <div class="profile-stat"><strong>ERP + SQL</strong><span>sustentação, dados e análise de sistemas</span></div>
+    <div class="profile-stat"><strong>Visão ponta a ponta</strong><span>do suporte técnico à evolução de sistemas</span></div>
+  </aside>
+</div>
+</header>
+
+<section id="sobre">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Sobre mim</span>
+    <h2>Uma carreira construída na prática.</h2>
+    <p class="muted">
+      Minha trajetória profissional evoluiu do suporte técnico N3/N2/N1 para a atuação
+      em Análise de Sistemas e Sustentação. Essa experiência me permite investigar
+      problemas, compreender o impacto para o usuário e colaborar com desenvolvimento
+      e negócio para construir soluções mais confiáveis.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="icon">🔎</div><h3>Análise & Sustentação</h3><p>Investigação de incidentes, identificação de inconsistências, validação de correções e acompanhamento de melhorias.</p></div>
+    <div class="card"><div class="icon">🗄️</div><h3>Dados & SQL</h3><p>Consultas e scripts SQL para extração, tratamento, atualização e análise de dados em apoio aos processos de negócio.</p></div>
+    <div class="card"><div class="icon">🤝</div><h3>Negócio & Tecnologia</h3><p>Interface com usuários e desenvolvimento, transformando demandas e evidências em requisitos mais claros.</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>Melhoria Contínua</h3><p>Foco em confiabilidade, documentação, evolução de sistemas e aprendizado contínuo.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="competencias">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Competências</span>
+    <h2>Conhecimento técnico com visão de ambiente corporativo.</h2>
+  </div>
+
+  <div class="tech-grid">
+    <div class="tech"><h3>💻 Linguagens</h3><p>SQL · Java · Python · APIs REST</p></div>
+    <div class="tech"><h3>🗃️ Banco de Dados</h3><p>Microsoft SQL Server (SSMS) · PostgreSQL · MySQL · Oracle</p></div>
+    <div class="tech"><h3>🏢 ERP & Aplicações</h3><p>ApolarNet · TOTVS · Linx · CliSiTef</p></div>
+    <div class="tech"><h3>🔗 CRM & Gestão</h3><p>Salesforce · Movidesk · Notion · Trello</p></div>
+    <div class="tech"><h3>🛠️ Ferramentas</h3><p>Excel · Postman · VS Code · IntelliJ IDEA · Eclipse · PyCharm · Katalon Studio</p></div>
+    <div class="tech"><h3>🌿 Versionamento</h3><p>Git · GitHub</p></div>
+    <div class="tech"><h3>🤖 IA & Produtividade</h3><p>ChatGPT · Microsoft Copilot · GitHub Copilot · Gemini · NotebookLM</p></div>
+    <div class="tech"><h3>📋 Metodologias</h3><p>Scrum · Kanban · ITIL</p></div>
+  </div>
+
+  <div class="card" style="margin-top:20px">
+    <h3>Competências comportamentais</h3>
+    <div class="skills">
+      <span class="tag">Pensamento Analítico</span>
+      <span class="tag">Resolução de Problemas</span>
+      <span class="tag">Comunicação Assertiva</span>
+      <span class="tag">Trabalho em Equipe</span>
+      <span class="tag">Proatividade</span>
+      <span class="tag">Melhoria Contínua</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="carreira">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Trajetória profissional</span>
+    <h2>De Suporte Técnico a Analista de Sistemas.</h2>
+    <p class="muted">Uma evolução profissional baseada em experiência prática, ambientes corporativos e resolução de problemas.</p>
+  </div>
+
+  <div class="timeline">
+    <article class="job"><span class="dot"></span><span class="date">09/2023 — 03/2026</span><h3>Analista de Sistemas · Apolar Imóveis</h3>
+      <ul>
+        <li>Sustentação do ERP ApolarNet, análise de incidentes, correções e melhorias.</li>
+        <li>Levantamento, análise e tratamento de dados para identificação de inconsistências.</li>
+        <li>Desenvolvimento e otimização de consultas e scripts SQL no Microsoft SQL Server.</li>
+        <li>Homologação de correções e novas funcionalidades antes da publicação em produção.</li>
+        <li>Interface com usuários e desenvolvimento para análise de requisitos e validação de soluções.</li>
+        <li>Documentação de evidências e especificação de requisitos funcionais e técnicos usando Movidesk e Notion.</li>
+      </ul>
+    </article>
+
+    <article class="job"><span class="dot"></span><span class="date">01/2022 — 09/2022</span><h3>Analista de Suporte Técnico N1 · Premier IT · Cliente Grupo Boticário</h3>
+      <ul>
+        <li>Suporte remoto às lojas e resolução de incidentes em sistemas de frente de caixa.</li>
+        <li>Atendimento via telefone e Salesforce.</li>
+        <li>Suporte a TOTVS, OmniShop, PDV Móvel, Linx e CliSiTef.</li>
+        <li>Atuação em incidentes envolvendo TEF, Pin Pad, impressoras fiscais e conectividade.</li>
+        <li>Atuação como Backup Focal e apoio na validação de chamados.</li>
+      </ul>
+    </article>
+
+    <article class="job"><span class="dot"></span><span class="date">10/2019 — 07/2020</span><h3>Analista de Suporte Técnico N2 · Netnews Serviços em Informática</h3>
+      <ul>
+        <li>Diagnóstico e resolução de incidentes de hardware e software.</li>
+        <li>Manutenção preventiva e corretiva de desktops e notebooks.</li>
+        <li>Instalação e configuração de Windows e aplicações corporativas.</li>
+        <li>Backup e recuperação de dados.</li>
+      </ul>
+    </article>
+
+    <article class="job"><span class="dot"></span><span class="date">10/2013 — 05/2016</span><h3>Analista de Suporte Técnico N2 · Stefanini IT Solutions · Cliente BRF S.A.</h3>
+      <ul>
+        <li>Suporte N2 a estações de trabalho e sistemas corporativos.</li>
+        <li>Suporte remoto às unidades da Comfrio.</li>
+        <li>Preparação de ambientes de teste, criação de imagens Windows e execução de testes de homologação.</li>
+        <li>Acompanhamento de implantação de softwares e equipamentos.</li>
+      </ul>
+    </article>
+
+    <article class="job"><span class="dot"></span><span class="date">08/2008 — 09/2012</span><h3>Analista de Suporte Técnico N3 · Premier IT Global Services</h3>
+      <ul>
+        <li>Suporte N3 em hardware, software e sistemas Windows e Linux.</li>
+        <li>Administração de Active Directory, usuários e permissões.</li>
+        <li>Instalação e configuração de equipamentos e aplicações corporativas.</li>
+        <li>Suporte técnico aos analistas N1 e N2 e atendimento remoto.</li>
+      </ul>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="impacto">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Meu diferencial</span>
+    <h2>O que levo para uma equipe de tecnologia.</h2>
+  </div>
+  <div class="impact">
+    <div class="impact-card"><strong>20+</strong><span>anos de experiência em TI</span></div>
+    <div class="impact-card"><strong>N3 → N2 → N1 → AS</strong><span>evolução construída em diferentes níveis de atuação</span></div>
+    <div class="impact-card"><strong>ERP + SQL</strong><span>experiência prática em sustentação e dados</span></div>
+  </div>
+</div>
+</section>
+
+<section id="cases">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Cases profissionais</span>
+    <h2>Como minha experiência se transforma em valor.</h2>
+  </div>
+
+  <div class="case-grid">
+    <div class="card case"><span class="case-label">CASE 01 · SUSTENTAÇÃO ERP</span><h3>Investigação de incidentes no ApolarNet</h3><p>Atuação na análise de incidentes e inconsistências, utilizando investigação técnica e dados do SQL Server para apoiar a identificação de causas e a definição de correções e melhorias.</p></div>
+    <div class="card case"><span class="case-label">CASE 02 · SQL & DADOS</span><h3>Dados para apoiar processos de negócio</h3><p>Criação e otimização de consultas e scripts SQL para extração, atualização, tratamento e análise de dados, apoiando áreas de negócio e relatórios.</p></div>
+    <div class="card case"><span class="case-label">CASE 03 · HOMOLOGAÇÃO</span><h3>Validação antes da produção</h3><p>Experiência em preparar cenários, executar testes e homologar correções e novas funcionalidades, contribuindo para reduzir riscos antes da publicação.</p></div>
+    <div class="card case"><span class="case-label">CASE 04 · REQUISITOS</span><h3>Conectando usuário e desenvolvimento</h3><p>Análise técnica de demandas, registro de evidências e documentação de requisitos funcionais e técnicos para facilitar a comunicação com a equipe de desenvolvimento.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="formacao">
+<div class="container">
+  <div class="section-head">
+    <span class="eyebrow">Formação & aprendizado</span>
+    <h2>Experiência sólida com atualização constante.</h2>
+  </div>
+
+  <div class="education">
+    <div class="card"><span class="eyebrow">Formação acadêmica</span><h3>Tecnólogo em Processamento de Dados</h3><p>UNOPAR · Conclusão em 2005</p></div>
+    <div class="card"><span class="eyebrow">2026</span><h3>Python do Zero a Inteligência Artificial</h3><p>Udemy</p></div>
+    <div class="card"><span class="eyebrow">2024</span><h3>SQL para Análise de Dados: do Básico ao Avançado</h3><p>Udemy</p></div>
+    <div class="card"><span class="eyebrow">2024</span><h3>Microsoft Copilot AI</h3><p>DIO · Microsoft</p></div>
+    <div class="card"><span class="eyebrow">2023</span><h3>Java Completo: POO + Projetos</h3><p>Udemy</p></div>
+    <div class="card"><span class="eyebrow">Idiomas</span><h3>Inglês & Espanhol</h3><p>Inglês: intermediário em leitura/escrita e básico em conversação. Espanhol: básico.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="contato">
+<div class="container">
+  <div class="contact">
+    <span class="eyebrow">Vamos conversar?</span>
+    <h2>Estou aberto a novos desafios profissionais.</h2>
+    <p class="muted">
+      Busco oportunidades em Análise de Sistemas, Sustentação de Sistemas, ERP, SQL
+      e suporte a aplicações corporativas, contribuindo com experiência prática,
+      capacidade analítica e foco na resolução de problemas.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:gustavohsr_technology@outlook.com">Enviar e-mail</a>
+      <a class="btn" href="https://www.linkedin.com/in/gustavo-schiavinato/" target="_blank">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/GustavoSchiavinato" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  © 2026 Gustavo Henrique Schiavinato Rezende · Curitiba / Paraná ·
+  <a href="https://github.com/GustavoSchiavinato" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/gustavo-schiavinato/" target="_blank">LinkedIn</a>
+</div>
+</footer>
+</body>
+</html>
