@@ -43,8 +43,6 @@ Minha trajetória conecta **tecnologia e negócio** com foco em **confiabilidade
 - Espanhol: Básico  
 
 ### 📞 Contato
-- 📧 Email: gustavohsr_technology@outlook.com  
-- 📞 Telefone: (41) 98758-8649  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
 - 💻 [GitHub](https://github.com/GustavoSchiavinato)
 
@@ -90,8 +88,6 @@ My career bridges **technology and business** with a focus on **reliability**, *
 - Spanish: Basic  
 
 ### 📞 Contact
-- 📧 Email: gustavohsr_technology@outlook.com  
-- 📞 Phone: +55 (41) 98758-8649  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
 - 💻 [GitHub](https://github.com/GustavoSchiavinato)
 
@@ -137,8 +133,6 @@ Mi trayectoria conecta la **tecnología y el negocio** con un enfoque en **confi
 - Español: Básico  
 
 ### 📞 Contacto
-- 📧 Email: gustavohsr_technology@outlook.com  
-- 📞 Teléfono: +55 (41) 98758-8649  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
 - 💻 [GitHub](https://github.com/GustavoSchiavinato)
 
