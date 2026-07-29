@@ -1,42 +1,37 @@
 # 📂 Portfólio Profissional – Gustavo Henrique Schiavinato Rezende
 
+---
+
+## 🇧🇷 - Português do Brasil
+
 Bem-vindo ao meu portfólio online!  
 Este projeto apresenta minha trajetória profissional, experiências, certificações e habilidades de forma clara e organizada.  
 O portfólio está disponível em: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
 
----
 
-## 👤 Sobre Mim
+### 👤 Sobre Mim
 Sou **Analista de Sustentação e Sistemas** com mais de 20 anos de experiência em suporte técnico e sustentação de aplicações corporativas.  
 Especialista em **SQL Server e ERP**, com atuação em análise de dados, homologação de sistemas e melhoria contínua.  
 Apaixonado por tecnologia, aprendizado constante e soluções que geram impacto real nos negócios.
 
----
-
-## 💼 Experiência Profissional
+### 💼 Experiência Profissional
 - **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
 - **Grupo Boticário – Premier IT (2022)** – Analista de Suporte N1  
 - **Netnews Informática (2019–2020)** – Analista de Suporte N2  
 - **Stefanini – Cliente BRF (2013–2016)** – Analista de Suporte N2  
 - **Premier IT (2008–2012)** – Analista de Suporte N3  
 
----
-
-## 🎓 Formação Acadêmica
+### 🎓 Formação Acadêmica
 - Tecnólogo em Processamento de Dados – UNOPAR (2005)
 
----
-
-## 📜 Cursos & Certificações
+### 📜 Cursos & Certificações
 - SQL Para Análise de Dados – Udemy (2024)  
 - Programação Python – Udemy (2026)  
 - Java Completo – Udemy (2023)  
 - Microsoft Copilot AI – DIO/Microsoft (2024)  
 - Outros disponíveis no [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
 
----
-
-## 🛠️ Competências Técnicas
+### 🛠️ Competências Técnicas
 - **Linguagens:** SQL, Python, Java  
 - **Banco de Dados:** SQL Server, PostgreSQL, MySQL, Oracle  
 - **ERP:** TOTVS, ApolarNet, Linx  
@@ -44,15 +39,11 @@ Apaixonado por tecnologia, aprendizado constante e soluções que geram impacto 
 - **Metodologias:** Scrum, Kanban, ITIL  
 - **Soft Skills:** Pensamento Analítico, Resolução de Problemas, Comunicação Assertiva, Trabalho em Equipe  
 
----
-
-## 🌍 Idiomas
+### 🌍 Idiomas
 - Inglês: Intermediário (leitura/escrita), Básico (conversação)  
 - Espanhol: Básico  
 
----
-
-## 📞 Contato
+### 📞 Contato
 - 📧 Email: gustavohsr_technology@outlook.com  
 - 📞 Telefone: (41) 98758-8649  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
@@ -60,45 +51,35 @@ Apaixonado por tecnologia, aprendizado constante e soluções que geram impacto 
 
 ---
 
-# 📂 Professional Portfolio – Gustavo Henrique Schiavinato Rezende
+## 🇺🇸 - English
 
 Welcome to my online portfolio!  
 This project showcases my professional journey, experiences, certifications, and skills in a clear and organized way.  
 The portfolio is available at: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
 
----
-
-## 👤 About Me
+### 👤 About Me
 I am a **Systems and Support Analyst** with over 20 years of experience in technical support and corporate applications maintenance.  
 Specialist in **SQL Server and ERP**, with expertise in data analysis, system testing, and continuous improvement.  
 Passionate about technology, lifelong learning, and solutions that deliver real business impact.
 
----
-
-## 💼 Professional Experience
+### 💼 Professional Experience
 - **Apolar Imóveis (2023–2026)** – Systems Analyst (ERP ApolarNet)  
 - **Grupo Boticário – Premier IT (2022)** – Support Analyst N1  
 - **Netnews Informática (2019–2020)** – Support Analyst N2  
 - **Stefanini – BRF Client (2013–2016)** – Support Analyst N2  
 - **Premier IT (2008–2012)** – Support Analyst N3  
 
----
-
-## 🎓 Education
+### 🎓 Education
 - Technologist in Data Processing – UNOPAR (2005)
 
----
-
-## 📜 Courses & Certifications
+### 📜 Courses & Certifications
 - SQL for Data Analysis – Udemy (2024)  
 - Python Programming – Udemy (2026)  
 - Complete Java – Udemy (2023)  
 - Microsoft Copilot AI – DIO/Microsoft (2024)  
 - More available on [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
 
----
-
-## 🛠️ Technical Skills
+### 🛠️ Technical Skills
 - **Languages:** SQL, Python, Java  
 - **Databases:** SQL Server, PostgreSQL, MySQL, Oracle  
 - **ERP:** TOTVS, ApolarNet, Linx  
@@ -106,17 +87,61 @@ Passionate about technology, lifelong learning, and solutions that deliver real 
 - **Methodologies:** Scrum, Kanban, ITIL  
 - **Soft Skills:** Analytical Thinking, Problem Solving, Assertive Communication, Teamwork  
 
----
-
-## 🌍 Languages
+### 🌍 Languages
 - English: Intermediate (reading/writing), Basic (speaking)  
 - Spanish: Basic  
 
----
-
-## 📞 Contact
+### 📞 Contact
 - 📧 Email: gustavohsr_technology@outlook.com  
 - 📞 Phone: +55 (41) 98758-8649  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
+- 💻 [GitHub](https://github.com/GustavoSchiavinato)
+
+---
+
+## 🇪🇸 - Español
+
+¡Bienvenido a mi portafolio en línea!  
+Este proyecto presenta mi trayectoria profesional, experiencias, certificaciones y habilidades de manera clara y organizada.  
+El portafolio está disponible en: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
+
+### 👤 Sobre Mí
+Soy **Analista de Soporte y Sistemas** con más de 20 años de experiencia en soporte técnico y mantenimiento de aplicaciones corporativas.  
+Especialista en **SQL Server y ERP**, con experiencia en análisis de datos, pruebas de sistemas y mejora continua.  
+Apasionado por la tecnología, el aprendizaje constante y las soluciones que generan impacto real en los negocios.
+
+### 💼 Experiencia Profesional
+- **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
+- **Grupo Boticário – Premier IT (2022)** – Analista de Soporte N1  
+- **Netnews Informática (2019–2020)** – Analista de Soporte N2  
+- **Stefanini – Cliente BRF (2013–2016)** – Analista de Soporte N2  
+- **Premier IT (2008–2012)** – Analista de Soporte N3  
+
+### 🎓 Formación Académica
+- Tecnólogo en Procesamiento de Datos – UNOPAR (2005)
+
+### 📜 Cursos & Certificaciones
+- SQL para Análisis de Datos – Udemy (2024)  
+- Programación en Python – Udemy (2026)  
+- Java Completo – Udemy (2023)  
+- Microsoft Copilot AI – DIO/Microsoft (2024)  
+- Más disponibles en [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
+
+### 🛠️ Competencias Técnicas
+- **Lenguajes:** SQL, Python, Java  
+- **Bases de Datos:** SQL Server, PostgreSQL, MySQL, Oracle  
+- **ERP:** TOTVS, ApolarNet, Linx  
+- **Herramientas:** GitHub, Postman, Notion, Excel, Trello  
+- **Metodologías:** Scrum, Kanban, ITIL  
+- **Soft Skills:** Pensamiento Analítico, Resolución de Problemas, Comunicación Asertiva, Trabajo en Equipo  
+
+### 🌍 Idiomas
+- Inglés: Intermedio (lectura/escritura), Básico (conversación)  
+- Español: Básico  
+
+### 📞 Contacto
+- 📧 Email: gustavohsr_technology@outlook.com  
+- 📞 Teléfono: +55 (41) 98758-8649  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
 - 💻 [GitHub](https://github.com/GustavoSchiavinato)
 
