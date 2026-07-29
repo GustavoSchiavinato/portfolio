@@ -4,136 +4,110 @@
 
 ## 🇧🇷 - Português do Brasil
 
-Bem-vindo ao meu portfólio online!  
-Este projeto apresenta minha trajetória profissional, experiências, certificações e habilidades de forma clara e organizada.  
-O portfólio está disponível em: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
+Este repositório foi criado para hospedar e compartilhar meu portfólio pessoal, disponível em:  
+👉 [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio)
 
+## 🎯 Objetivo
+O portfólio foi desenvolvido com a intenção de:
+- Apresentar meus projetos e experiências de forma organizada e acessível.
+- Criar uma identidade digital profissional.
+- Facilitar o contato com recrutadores e empresas.
+- Demonstrar minhas habilidades técnicas em desenvolvimento web e design.
 
-### 👤 Sobre Mim
-Profissional de tecnologia com **mais de 20 anos de experiência** em ambientes corporativos, unindo **suporte**, **sustentação de sistemas**, **ERP**, **SQL Server**, **análise de incidentes**, **dados** e **homologação**.  
-Minha trajetória conecta **tecnologia e negócio** com foco em **confiabilidade**, **resolução de problemas** e **melhoria contínua**.
+## 🚀 Motivação
+A criação deste portfólio surgiu da necessidade de ter um espaço centralizado onde eu pudesse:
+- Mostrar minha evolução como desenvolvedor.
+- Reunir trabalhos acadêmicos, pessoais e profissionais.
+- Ter uma vitrine online que refletisse minha dedicação e criatividade.
 
-### 💼 Experiência Profissional
-- **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
-- **Grupo Boticário – Premier IT (2022)** – Analista de Suporte N1  
-- **Netnews Informática (2019–2020)** – Analista de Suporte N2  
-- **Stefanini – Cliente BRF (2013–2016)** – Analista de Suporte N2  
-- **Premier IT (2008–2012)** – Analista de Suporte N3  
+## 🛠️ Tecnologias Utilizadas
+- **HTML5** e **CSS3** para estrutura e estilo.
+- **JavaScript** para interatividade.
+- **GitHub Pages** para hospedagem gratuita e prática.
+- Ferramentas de design e edição para criação de elementos visuais.
 
-### 🎓 Formação Acadêmica
-- Tecnólogo em Processamento de Dados – UNOPAR (2005)
+## 📌 Estrutura
+O portfólio contém:
+- Página inicial com apresentação pessoal.
+- Seção de projetos com links e descrições.
+- Informações de contato e redes sociais.
+- Layout responsivo para diferentes dispositivos.
 
-### 📜 Cursos & Certificações
-- SQL Para Análise de Dados – Udemy (2024)  
-- Programação Python – Udemy (2026)  
-- Java Completo – Udemy (2023)  
-- Microsoft Copilot AI – DIO/Microsoft (2024)  
-- Outros disponíveis no [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
-
-### 🛠️ Competências Técnicas
-- **Linguagens:** SQL, Python, Java  
-- **Banco de Dados:** SQL Server, PostgreSQL, MySQL, Oracle  
-- **ERP:** TOTVS, ApolarNet, Linx  
-- **Ferramentas:** GitHub, Postman, Notion, Excel, Trello  
-- **Metodologias:** Scrum, Kanban, ITIL  
-- **Soft Skills:** Pensamento Analítico, Resolução de Problemas, Comunicação Assertiva, Trabalho em Equipe  
-
-### 🌍 Idiomas
-- Inglês: Intermediário (leitura/escrita), Básico (conversação)  
-- Espanhol: Básico  
-
-### 📞 Contato
-- 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
-- 💻 [GitHub](https://github.com/GustavoSchiavinato)
+## ✨ Resumo Inspiracional
+Este portfólio é um reflexo do meu compromisso em evoluir constantemente como profissional e estar preparado para novas oportunidades.
 
 ---
 
 ## 🇺🇸 - English
 
-Welcome to my online portfolio!  
-This project showcases my professional journey, experiences, certifications, and skills in a clear and organized way.  
-The portfolio is available at: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
+This repository was created to host and share my personal portfolio, available at:  
+👉 [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio)
 
-### 👤 About Me
-Technology professional with **20+ years of experience** in corporate environments, combining **support**, **systems maintenance**, **ERP**, **SQL Server**, **incident analysis**, **data management**, and **system testing**.  
-My career bridges **technology and business** with a focus on **reliability**, **problem-solving**, and **continuous improvement**.
+## 🎯 Purpose
+The portfolio was developed with the intention of:
+- Showcasing my projects and professional experiences.
+- Building a strong digital identity.
+- Making it easier for recruiters and companies to connect with me.
+- Demonstrating my technical skills in web development and design.
 
-### 💼 Professional Experience
-- **Apolar Imóveis (2023–2026)** – Systems Analyst (ERP ApolarNet)  
-- **Grupo Boticário – Premier IT (2022)** – Support Analyst N1  
-- **Netnews Informática (2019–2020)** – Support Analyst N2  
-- **Stefanini – BRF Client (2013–2016)** – Support Analyst N2  
-- **Premier IT (2008–2012)** – Support Analyst N3  
+## 🚀 Motivation
+The idea behind this portfolio came from the need to have a centralized space where I could:
+- Display my growth as a developer.
+- Gather academic, personal, and professional work.
+- Create an online showcase that reflects my dedication and creativity.
 
-### 🎓 Education
-- Technologist in Data Processing – UNOPAR (2005)
+## 🛠️ Technologies Used
+- **HTML5** and **CSS3** for structure and styling.
+- **JavaScript** for interactivity.
+- **GitHub Pages** for free and practical hosting.
+- Design and editing tools for visual elements.
 
-### 📜 Courses & Certifications
-- SQL for Data Analysis – Udemy (2024)  
-- Python Programming – Udemy (2026)  
-- Complete Java – Udemy (2023)  
-- Microsoft Copilot AI – DIO/Microsoft (2024)  
-- More available on [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
+## 📌 Structure
+The portfolio includes:
+- A homepage with personal introduction.
+- A projects section with links and descriptions.
+- Contact information and social media links.
+- Responsive layout for different devices.
 
-### 🛠️ Technical Skills
-- **Languages:** SQL, Python, Java  
-- **Databases:** SQL Server, PostgreSQL, MySQL, Oracle  
-- **ERP:** TOTVS, ApolarNet, Linx  
-- **Tools:** GitHub, Postman, Notion, Excel, Trello  
-- **Methodologies:** Scrum, Kanban, ITIL  
-- **Soft Skills:** Analytical Thinking, Problem Solving, Assertive Communication, Teamwork  
-
-### 🌍 Languages
-- English: Intermediate (reading/writing), Basic (speaking)  
-- Spanish: Basic  
-
-### 📞 Contact
-- 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
-- 💻 [GitHub](https://github.com/GustavoSchiavinato)
+## ✨ Inspirational Summary
+This portfolio reflects my commitment to continuously growing as a professional and being ready for new opportunities.
 
 ---
 
 ## 🇪🇸 - Español
 
-¡Bienvenido a mi portafolio en línea!  
-Este proyecto presenta mi trayectoria profesional, experiencias, certificaciones y habilidades de manera clara y organizada.  
-El portafolio está disponible en: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
+# Portafolio - Gustavo Schiavinato
 
-### 👤 Sobre Mí
-Profesional de tecnología con **más de 20 años de experiencia** en entornos corporativos, integrando **soporte**, **mantenimiento de sistemas**, **ERP**, **SQL Server**, **análisis de incidentes**, **gestión de datos** y **homologación**.  
-Mi trayectoria conecta la **tecnología y el negocio** con un enfoque en **confiabilidad**, **resolución de problemas** y **mejora continua**.
+Este repositorio fue creado para alojar y compartir mi portafolio personal, disponible en:  
+👉 [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio)
 
-### 💼 Experiencia Profesional
-- **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
-- **Grupo Boticário – Premier IT (2022)** – Analista de Soporte N1  
-- **Netnews Informática (2019–2020)** – Analista de Soporte N2  
-- **Stefanini – Cliente BRF (2013–2016)** – Analista de Soporte N2  
-- **Premier IT (2008–2012)** – Analista de Soporte N3  
+## 🎯 Objetivo
+El portafolio fue desarrollado con la intención de:
+- Mostrar mis proyectos y experiencias profesionales.
+- Construir una identidad digital sólida.
+- Facilitar el contacto con reclutadores y empresas.
+- Demostrar mis habilidades técnicas en desarrollo web y diseño.
 
-### 🎓 Formación Académica
-- Tecnólogo en Procesamiento de Datos – UNOPAR (2005)
+## 🚀 Motivación
+La creación de este portafolio surgió de la necesidad de tener un espacio centralizado donde pudiera:
+- Exhibir mi crecimiento como desarrollador.
+- Reunir trabajos académicos, personales y profesionales.
+- Contar con una vitrina en línea que refleje mi dedicación y creatividad.
 
-### 📜 Cursos & Certificaciones
-- SQL para Análisis de Datos – Udemy (2024)  
-- Programación en Python – Udemy (2026)  
-- Java Completo – Udemy (2023)  
-- Microsoft Copilot AI – DIO/Microsoft (2024)  
-- Más disponibles en [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)
+## 🛠️ Tecnologías Utilizadas
+- **HTML5** y **CSS3** para la estructura y el estilo.
+- **JavaScript** para la interactividad.
+- **GitHub Pages** para un alojamiento gratuito y práctico.
+- Herramientas de diseño y edición para elementos visuales.
 
-### 🛠️ Competencias Técnicas
-- **Lenguajes:** SQL, Python, Java  
-- **Bases de Datos:** SQL Server, PostgreSQL, MySQL, Oracle  
-- **ERP:** TOTVS, ApolarNet, Linx  
-- **Herramientas:** GitHub, Postman, Notion, Excel, Trello  
-- **Metodologías:** Scrum, Kanban, ITIL  
-- **Soft Skills:** Pensamiento Analítico, Resolución de Problemas, Comunicación Asertiva, Trabajo en Equipo  
+## 📌 Estructura
+El portafolio contiene:
+- Página principal con presentación personal.
+- Sección de proyectos con enlaces y descripciones.
+- Información de contacto y redes sociales.
+- Diseño responsivo para diferentes dispositivos.
 
-### 🌍 Idiomas
-- Inglés: Intermedio (lectura/escritura), Básico (conversación)  
-- Español: Básico  
-
-### 📞 Contacto
-- 🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-schiavinato/)  
-- 💻 [GitHub](https://github.com/GustavoSchiavinato)
+## ✨ Resumen Inspiracional
+Este portafolio refleja mi compromiso de evolucionar constantemente como profesional y estar preparado para nuevas oportunidades.
 
 ---
