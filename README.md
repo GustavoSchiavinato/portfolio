@@ -10,9 +10,8 @@ O portfólio está disponível em: [gustavoschiavinato.github.io/portfolio](http
 
 
 ### 👤 Sobre Mim
-Sou **Analista de Sustentação e Sistemas** com mais de 20 anos de experiência em suporte técnico e sustentação de aplicações corporativas.  
-Especialista em **SQL Server e ERP**, com atuação em análise de dados, homologação de sistemas e melhoria contínua.  
-Apaixonado por tecnologia, aprendizado constante e soluções que geram impacto real nos negócios.
+Profissional de tecnologia com **mais de 20 anos de experiência** em ambientes corporativos, unindo **suporte**, **sustentação de sistemas**, **ERP**, **SQL Server**, **análise de incidentes**, **dados** e **homologação**.  
+Minha trajetória conecta **tecnologia e negócio** com foco em **confiabilidade**, **resolução de problemas** e **melhoria contínua**.
 
 ### 💼 Experiência Profissional
 - **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
@@ -58,9 +57,8 @@ This project showcases my professional journey, experiences, certifications, and
 The portfolio is available at: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
 
 ### 👤 About Me
-I am a **Systems and Support Analyst** with over 20 years of experience in technical support and corporate applications maintenance.  
-Specialist in **SQL Server and ERP**, with expertise in data analysis, system testing, and continuous improvement.  
-Passionate about technology, lifelong learning, and solutions that deliver real business impact.
+Technology professional with **20+ years of experience** in corporate environments, combining **support**, **systems maintenance**, **ERP**, **SQL Server**, **incident analysis**, **data management**, and **system testing**.  
+My career bridges **technology and business** with a focus on **reliability**, **problem-solving**, and **continuous improvement**.
 
 ### 💼 Professional Experience
 - **Apolar Imóveis (2023–2026)** – Systems Analyst (ERP ApolarNet)  
@@ -106,9 +104,8 @@ Este proyecto presenta mi trayectoria profesional, experiencias, certificaciones
 El portafolio está disponible en: [gustavoschiavinato.github.io/portfolio](https://gustavoschiavinato.github.io/portfolio/)
 
 ### 👤 Sobre Mí
-Soy **Analista de Soporte y Sistemas** con más de 20 años de experiencia en soporte técnico y mantenimiento de aplicaciones corporativas.  
-Especialista en **SQL Server y ERP**, con experiencia en análisis de datos, pruebas de sistemas y mejora continua.  
-Apasionado por la tecnología, el aprendizaje constante y las soluciones que generan impacto real en los negocios.
+Profesional de tecnología con **más de 20 años de experiencia** en entornos corporativos, integrando **soporte**, **mantenimiento de sistemas**, **ERP**, **SQL Server**, **análisis de incidentes**, **gestión de datos** y **homologación**.  
+Mi trayectoria conecta la **tecnología y el negocio** con un enfoque en **confiabilidad**, **resolución de problemas** y **mejora continua**.
 
 ### 💼 Experiencia Profesional
 - **Apolar Imóveis (2023–2026)** – Analista de Sistemas (ERP ApolarNet)  
