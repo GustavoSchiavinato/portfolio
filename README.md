@@ -1,4 +1,4 @@
-# 📂 Portfólio Profissional – Gustavo Henrique Schiavinato Rezende
+# 📂 Portfólio Profissional
 
 ---
 
