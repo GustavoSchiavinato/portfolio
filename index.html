@@ -3,1306 +3,62 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<meta
-    name="description"
-    content="Portfólio profissional de Gustavo Henrique Schiavinato Rezende — Analista de Sistemas, Sustentação, ERP e SQL Server."
->
-
-<meta
-    name="author"
-    content="Gustavo Henrique Schiavinato Rezende"
->
-
-<title>
-    Gustavo Schiavinato | Analista de Suporte Técnico de Sistemas & Analista de Sistemas
-</title>
-
-
-<style>
-
-/* =====================================================
-   VARIÁVEIS
-===================================================== */
-
-:root{
-
-    --bg:#07111f;
-
-    --bg2:#0b1728;
-
-    --card:rgba(16,31,51,.78);
-
-    --text:#edf5ff;
-
-    --muted:#a9b9cd;
-
-    --accent:#55e6cf;
-
-    --blue:#62a8ff;
-
-    --line:rgba(255,255,255,.10);
-
-    --shadow:
-        0 24px 70px rgba(0,0,0,.30);
-
-    --radius:22px;
-
-}
-
-
-/* =====================================================
-   RESET
-===================================================== */
-
-*{
-
-    box-sizing:border-box;
-
-    margin:0;
-
-    padding:0;
-
-}
-
-
-html{
-
-    scroll-behavior:smooth;
-
-}
-
-
-body{
-
-    font-family:
-        Inter,
-        Segoe UI,
-        Roboto,
-        Arial,
-        sans-serif;
-
-    background:
-        linear-gradient(
-            180deg,
-            var(--bg),
-            var(--bg2),
-            var(--bg)
-        );
-
-    color:var(--text);
-
-    line-height:1.65;
-
-}
-
-
-a{
-
-    text-decoration:none;
-
-    color:inherit;
-
-}
-
-
-.container{
-
-    width:min(1140px,92%);
-
-    margin:auto;
-
-}
-
-
-/* =====================================================
-   NAVEGAÇÃO
-===================================================== */
-
-nav{
-
-    position:sticky;
-
-    top:0;
-
-    z-index:100;
-
-    background:
-        rgba(7,17,31,.84);
-
-    backdrop-filter:
-        blur(16px);
-
-    border-bottom:
-        1px solid var(--line);
-
-}
-
-
-.nav{
-
-    min-height:70px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:20px;
-
-}
-
-
-.logo{
-
-    font-size:1.2rem;
-
-    font-weight:900;
-
-    letter-spacing:.5px;
-
-    white-space: nowrap;
-
-    margin-right: 40px;
-
-    display: flex;
-
-    align-items: center;
-
-}
-
-
-.logo span{
-
-    color:var(--accent);
-
-}
-
-
-.menu{
-
-    display:flex;
-
-    gap:24px;
-
-    color:var(--muted);
-
-    font-size:.9rem;
-
-    font-weight:600;
-
-}
-
-
-.menu a:hover{
-
-    color:var(--accent);
-
-}
-
-
-/* =====================================================
-   SELETOR DE IDIOMAS
-===================================================== */
-
-.language-selector{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:3px;
-
-    margin-bottom:0px;
-
-    align-self:center;
-
-}
-
-
-.language-button{
-
-    position:relative;
-
-    min-width:58px;
-
-    height:40px;
-
-    padding:0 10px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.25);
-
-    border-radius:10px;
-
-    background:transparent;
-
-    color:#ffffff;
-
-    cursor:pointer;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:5px;
-
-    transition:
-        background .2s ease,
-        border-color .2s ease,
-        transform .2s ease,
-        box-shadow .2s ease;
-
-}
-
-
-.language-button .flag{
-
-    font-size:1.25rem;
-
-    line-height:1;
-
-}
-
-
-.language-button .language-code{
-
-    color:#ffffff;
-
-    font-size:.75rem;
-
-    font-weight:700;
-
-    letter-spacing:.5px;
-
-}
-
-
-.language-button:hover{
-
-    background:
-        rgba(255,255,255,.08);
-
-    border-color:
-        rgba(255,255,255,.55);
-
-    transform:
-        translateY(-2px);
-
-}
-
-
-.language-button.active{
-
-    border-color:
-        rgba(85,230,207,.75);
-
-    background:
-        rgba(85,230,207,.12);
-
-    box-shadow:
-        0 0 0 3px
-        rgba(85,230,207,.08);
-
-}
-
-
-.language-button,
-.language-button span,
-.language-button .language-code{
-
-    color:#ffffff;
-
-}
-
-
-/* =====================================================
-   TOOLTIP
-===================================================== */
-
-.language-button::after{
-
-    content:attr(data-tooltip);
-
-    position:absolute;
-
-    top:48px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%)
-        translateY(-5px);
-
-    white-space:nowrap;
-
-    padding:8px 12px;
-
-    border-radius:8px;
-
-    background:#ffffff;
-
-    color:#13243a;
-
-    font-size:.72rem;
-
-    font-weight:600;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    pointer-events:none;
-
-    transition:
-        opacity .2s ease,
-        transform .2s ease,
-        visibility .2s ease;
-
-    z-index:9999;
-
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.25);
-
-}
-
-
-.language-button::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:43px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    border-left:
-        5px solid transparent;
-
-    border-right:
-        5px solid transparent;
-
-    border-bottom:
-        5px solid #ffffff;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:
-        opacity .2s ease,
-        visibility .2s ease;
-
-    z-index:10000;
-
-}
-
-
-.language-button:hover::after,
-.language-button:hover::before{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-
-.language-button:hover::after{
-
-    transform:
-        translateX(-50%)
-        translateY(0);
-
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
-
-.hero{
-
-    min-height:
-        calc(100vh - 70px);
-
-    display:flex;
-
-    align-items:center;
-
-    padding:75px 0;
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-.hero:before{
-
-    content:"";
-
-    position:absolute;
-
-    width:650px;
-
-    height:650px;
-
-    right:-220px;
-
-    top:-220px;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(98,168,255,.18),
-            transparent 67%
-        );
-
-    pointer-events:none;
-
-}
-
-
-.hero-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        1.4fr .6fr;
-
-    gap:70px;
-
-    align-items:center;
-
-}
-
-
-.badge{
-
-    display:inline-block;
-
-    border:
-        1px solid
-        rgba(85,230,207,.28);
-
-    background:
-        rgba(85,230,207,.07);
-
-    color:var(--accent);
-
-    padding:7px 13px;
-
-    border-radius:99px;
-
-    font-size:.78rem;
-
-    font-weight:800;
-
-    letter-spacing:1px;
-
-}
-
-
-h1{
-
-    font-size:
-        clamp(3rem,7vw,6rem);
-
-    line-height:.95;
-
-    letter-spacing:-5px;
-
-    margin:24px 0;
-
-}
-
-
-.gradient{
-
-    background:
-        linear-gradient(
-            100deg,
-            #fff,
-            var(--blue),
-            var(--accent)
-        );
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-}
-
-
-.hero-text{
-
-    font-size:1.18rem;
-
-    color:var(--muted);
-
-    max-width:730px;
-
-}
-
-
-.actions{
-
-    display:flex;
-
-    gap:12px;
-
-    flex-wrap:wrap;
-
-    margin-top:30px;
-
-}
-
-
-.btn{
-
-    padding:12px 18px;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:11px;
-
-    font-weight:800;
-
-    transition:.2s;
-
-}
-
-
-.btn:hover{
-
-    transform:
-        translateY(-3px);
-
-    border-color:
-        rgba(85,230,207,.4);
-
-}
-
-
-.btn.primary{
-
-    background:
-        var(--accent);
-
-    color:#05201c;
-
-    border-color:
-        var(--accent);
-
-}
-
-
-/* =====================================================
-   PERFIL
-===================================================== */
-
-.profile{
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(23,44,70,.88),
-            rgba(11,23,40,.86)
-        );
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:28px;
-
-    padding:28px;
-
-    box-shadow:
-        var(--shadow);
-
-}
-
-
-.photo{
-
-    width:150px;
-
-    height:150px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:
-        0 auto 22px;
-
-    border:
-        4px solid
-        rgba(85,230,207,.55);
-
-    background:#13243a;
-
-}
-
-
-.photo-note{
-
-    font-size:.75rem;
-
-    color:var(--muted);
-
-    text-align:center;
-
-    margin-top:-12px;
-
-    margin-bottom:18px;
-
-}
-
-
-.profile h3{
-
-    text-align:center;
-
-    font-size:1.1rem;
-
-}
-
-
-.profile p{
-
-    text-align:center;
-
-    color:var(--muted);
-
-    font-size:.9rem;
-
-    margin-top:5px;
-
-}
-
-
-.profile-stat{
-
-    border-top:
-        1px solid
-        var(--line);
-
-    padding:15px 0;
-
-    margin-top:15px;
-
-}
-
-
-.profile-stat strong{
-
-    display:block;
-
-    font-size:1.35rem;
-
-}
-
-
-.profile-stat span{
-
-    font-size:.84rem;
-
-    color:var(--muted);
-
-}
-
-
-/* =====================================================
-   SEÇÕES
-===================================================== */
-
-section{
-
-    padding:100px 0;
-
-}
-
-
-.section-head{
-
-    max-width:780px;
-
-    margin-bottom:45px;
-
-}
-
-
-.eyebrow{
-
-    text-transform:uppercase;
-
-    color:var(--accent);
-
-    font-size:.76rem;
-
-    font-weight:900;
-
-    letter-spacing:2px;
-
-}
-
-
-h2{
-
-    font-size:
-        clamp(2.1rem,4vw,3.5rem);
-
-    line-height:1.05;
-
-    letter-spacing:-2px;
-
-    margin:10px 0 17px;
-
-}
-
-
-.muted{
-
-    color:var(--muted);
-
-}
-
-
-.grid2{
-
-    display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap:20px;
-
-}
-
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap:17px;
-
-}
-
-
-.card{
-
-    background:
-        var(--card);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        var(--radius);
-
-    padding:27px;
-
-}
-
-
-.card h3{
-
-    margin:8px 0;
-
-}
-
-
-.card p{
-
-    color:var(--muted);
-
-    font-size:.94rem;
-
-}
-
-
-.icon{
-
-    font-size:1.7rem;
-
-}
-
-
-.skills{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:9px;
-
-}
-
-
-.tag{
-
-    padding:8px 12px;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:99px;
-
-    background:
-        rgba(255,255,255,.035);
-
-    font-size:.87rem;
-
-}
-
-
-.tech-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap:16px;
-
-}
-
-
-.tech{
-
-    background:
-        rgba(255,255,255,.025);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:17px;
-
-    padding:21px;
-
-}
-
-
-.tech h3{
-
-    font-size:1rem;
-
-}
-
-
-.tech p{
-
-    color:var(--muted);
-
-    font-size:.87rem;
-
-    margin-top:7px;
-
-}
-
-
-/* =====================================================
-   TIMELINE
-===================================================== */
-
-.timeline{
-
-    position:relative;
-
-    margin-left:10px;
-
-}
-
-
-.timeline:before{
-
-    content:"";
-
-    position:absolute;
-
-    left:8px;
-
-    top:5px;
-
-    bottom:5px;
-
-    width:1px;
-
-    background:
-        var(--line);
-
-}
-
-
-.job{
-
-    position:relative;
-
-    padding-left:45px;
-
-    margin-bottom:50px;
-
-}
-
-
-.dot{
-
-    position:absolute;
-
-    left:1px;
-
-    top:8px;
-
-    width:15px;
-
-    height:15px;
-
-    background:
-        var(--accent);
-
-    border-radius:50%;
-
-    box-shadow:
-        0 0 0 6px
-        rgba(85,230,207,.10);
-
-}
-
-
-.date{
-
-    font-size:.85rem;
-
-    color:var(--blue);
-
-    font-weight:800;
-
-}
-
-
-.job h3{
-
-    margin:5px 0;
-
-}
-
-
-.job ul{
-
-    padding-left:20px;
-
-    color:var(--muted);
-
-}
-
-
-/* =====================================================
-   CASES
-===================================================== */
-
-.case-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap:18px;
-
-}
-
-
-.case{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-.case-label{
-
-    color:var(--accent);
-
-    font-weight:900;
-
-    font-size:.75rem;
-
-    letter-spacing:1px;
-
-}
-
-
-.case h3{
-
-    font-size:1.25rem;
-
-}
-
-
-.case p{
-
-    margin-top:9px;
-
-}
-
-
-/* =====================================================
-   IMPACTO
-===================================================== */
-
-.impact{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:17px;
-
-}
-
-
-.impact-card{
-
-    text-align:center;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(85,230,207,.08),
-            rgba(98,168,255,.06)
-        );
-
-    border:
-        1px solid
-        var(--line);
-
-    padding:28px;
-
-    border-radius:20px;
-
-}
-
-
-.impact-card strong{
-
-    font-size:2.2rem;
-
-    display:block;
-
-    color:var(--accent);
-
-}
-
-
-.impact-card span{
-
-    color:var(--muted);
-
-    font-size:.9rem;
-
-}
-
-
-/* =====================================================
-   FORMAÇÃO
-===================================================== */
-
-.education{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:18px;
-
-}
-
-
-/* =====================================================
-   CONTATO
-===================================================== */
-
-.contact{
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(85,230,207,.10),
-            rgba(98,168,255,.10)
-        );
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:28px;
-
-    padding:52px;
-
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer{
-
-    border-top:
-        1px solid
-        var(--line);
-
-    padding:35px 0;
-
-    color:var(--muted);
-
-    font-size:.85rem;
-
-}
-
-
-/* =====================================================
-   RESPONSIVO
-===================================================== */
-
-@media(max-width:900px){
-
-    .hero-grid,
-    .grid2{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .cards,
-    .tech-grid{
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
-
-    .case-grid,
-    .education{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .impact{
-
-        grid-template-columns:
-            1fr 1fr;
-
-    }
-
-    .menu{
-
-        display:none;
-
-    }
-
-}
-
-
-@media(max-width:560px){
-
-    section{
-
-        padding:70px 0;
-
-    }
-
-    .cards,
-    .tech-grid,
-    .impact{
-
-        grid-template-columns:1fr;
-
-    }
-
-    h1{
-
-        letter-spacing:-3px;
-
-    }
-
-    .hero{
-
-        padding:55px 0;
-
-    }
-
-    .contact{
-
-        padding:30px;
-
-    }
-
-    .profile{
-
-        max-width:380px;
-
-        margin:auto;
-
-    }
-
-    .language-selector{
-
-        margin-bottom:15px;
-
-    }
-
-    .language-button{
-
-        min-width:50px;
-
-        height:36px;
-
-        padding:0 7px;
-
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Gustavo Henrique Schiavinato Rezende — Analista de Suporte Técnico de Sistemas | ERP | SQL Server | Analista de Sistemas"
+    >
+
+    <meta
+        name="author"
+        content="Gustavo Henrique Schiavinato Rezende"
+    >
+
+    <title>
+        Gustavo Henrique Schiavinato Rezende | Analista de Sistemas
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
 
 </head>
 
@@ -1310,2641 +66,1990 @@ footer{
 <body>
 
 
-<nav>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-<div class="container nav">
+    <header class="site-header">
 
+        <div class="header-container">
 
-    <!-- IDIOMAS -->
 
-    <div class="language-selector"
-         aria-label="Seleção de idioma">
+            <!-- =================================================
+                 SELETOR DE IDIOMAS
+            ================================================== -->
 
-        <button
-            class="language-button active"
-            data-lang="pt"
-            data-tooltip="Português do Brasil"
-            aria-label="Português do Brasil"
-            type="button">
+            <div
+                class="language-selector"
+                aria-label="Seleção de idioma"
+            >
 
-            <span class="language-code">
-                BR
-            </span>
+                <button
+                    class="language-button active"
+                    data-lang="pt"
+                    data-tooltip="Brasil — Português do Brasil"
+                    aria-label="Português do Brasil"
+                >
 
-        </button>
+                    🇧🇷
 
+                    <span>
+                        BR
+                    </span>
 
-        <button
-            class="language-button"
-            data-lang="en"
-            data-tooltip="English"
-            aria-label="English"
-            type="button">
-  
-            <span class="language-code">
-                US
-            </span>
+                </button>
 
-        </button>
 
+                <button
+                    class="language-button"
+                    data-lang="en"
+                    data-tooltip="Estados Unidos — Inglês"
+                    aria-label="English"
+                >
 
-        <button
-            class="language-button"
-            data-lang="es"
-            data-tooltip="Español"
-            aria-label="Español"
-            type="button">
+                    🇺🇸
 
-            <span class="language-code">
-                ES
-            </span>
+                    <span>
+                        US
+                    </span>
 
-        </button>
+                </button>
 
-    </div>
 
-    <div class="logo">
+                <button
+                    class="language-button"
+                    data-lang="es"
+                    data-tooltip="Espanha — Espanhol"
+                    aria-label="Español"
+                >
 
-        Gustavo Henrique Schiavinato Rezende<span>.</span>
+                    🇪🇸
 
-    </div>
+                    <span>
+                        ES
+                    </span>
 
-    <div class="menu">
+                </button>
 
-        <a href="#sobre"
-           data-i18n="menu.about">
-            Sobre
-        </a>
+            </div>
 
-        <a href="#competencias"
-           data-i18n="menu.skills">
-            Competências
-        </a>
 
-        <a href="#carreira"
-           data-i18n="menu.career">
-            Carreira
-        </a>
+            <!-- =================================================
+                 NOME
+            ================================================== -->
 
-        <a href="#impacto"
-           data-i18n="menu.impact">
-            Impacto
-        </a>
+            <a
+                href="#inicio"
+                class="brand"
+            >
 
-        <a href="#cases"
-           data-i18n="menu.cases">
-            Cases
-        </a>
+                Gustavo Henrique
 
-        <a href="#formacao"
-           data-i18n="menu.education">
-            Formação
-        </a>
+                <strong>
+                    Schiavinato Rezende
+                </strong>
 
-        <a href="#contato"
-           data-i18n="menu.contact">
-            Contato
-        </a>
+            </a>
 
-    </div>
 
-</div>
+            <!-- =================================================
+                 MENU
+            ================================================== -->
 
-</nav>
+            <nav
+                class="main-nav"
+                aria-label="Menu principal"
+            >
 
-<header class="hero">
+                <a
+                    href="#sobre"
+                    data-i18n="nav_about"
+                >
+                    Sobre
+                </a>
 
-<div class="container hero-grid">
+                <a
+                    href="#competencias"
+                    data-i18n="nav_skills"
+                >
+                    Competências
+                </a>
 
+                <a
+                    href="#carreira"
+                    data-i18n="nav_career"
+                >
+                    Carreira
+                </a>
 
-<div>
+                <a
+                    href="#impacto"
+                    data-i18n="nav_impact"
+                >
+                    Impacto
+                </a>
 
+                <a
+                    href="#cases"
+                    data-i18n="nav_cases"
+                >
+                    Cases
+                </a>
 
-<span
-    class="badge"
-    data-i18n="hero.badge">
+                <a
+                    href="#formacao"
+                    data-i18n="nav_education"
+                >
+                    Formação
+                </a>
 
-    ANALISTA DE SUPORTE TÉCNICO DE SISTEMAS · ERP · SQL SERVER · ANALISTA DE SISTEMAS
+                <a
+                    href="#contato"
+                    data-i18n="nav_contact"
+                >
+                    Contato
+                </a>
 
-</span>
+            </nav>
 
 
-<h1 data-i18n="hero.title">
+        </div>
 
-    Experiência para transformar
-    <span class="gradient">
-        problemas em soluções.
-    </span>
+    </header>
 
-</h1>
 
 
-<p
-    class="hero-text"
-    data-i18n="hero.description">
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
 
-    Profissional de tecnologia com mais de 20 anos de experiência em suporte
-    técnico de sistemas e ambientes corporativos, com experiência de 2 anos e 6
-    meses como Analista de Sistemas atuando com ERP, SQL Server, análise de
-    incidentes, dados e homologação. Minha trajetória conecta tecnologia e negócio com foco em
-    confiabilidade, resolução de problemas e melhoria contínua.
+    <main>
 
-</p>
 
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-<div class="actions">
+        <section
+            id="inicio"
+            class="hero"
+        >
 
+            <div class="hero-container">
 
-<a
-    class="btn primary"
-    href="#carreira"
-    data-i18n="hero.button">
 
-    Conheça minha trajetória →
+                <!-- =================================================
+                     TEXTO PRINCIPAL
+                ================================================== -->
 
-</a>
+                <div class="hero-content">
 
 
-<a
-    class="btn"
-    href="https://www.linkedin.com/in/gustavo-schiavinato/"
-    target="_blank">
+                    <span
+                        class="hero-eyebrow"
+                        data-i18n="hero_role"
+                    >
+                        ANALISTA DE SUPORTE TÉCNICO DE SISTEMAS
+                    </span>
 
-    LinkedIn ↗
 
-</a>
+                    <h1
+                        data-i18n="hero_title"
+                    >
+                        Sistemas, suporte e tecnologia
+                        conectados ao negócio.
+                    </h1>
 
 
-<a
-    class="btn"
-    href="https://github.com/GustavoSchiavinato"
-    target="_blank">
+                    <p
+                        class="hero-description"
+                        data-i18n="hero_description"
+                    >
+                        Mais de 20 anos de experiência em suporte
+                        a ambientes corporativos, aplicações, ERP,
+                        SQL Server, análise de incidentes, dados
+                        e homologação de sistemas.
+                    </p>
 
-    GitHub ↗
 
-</a>
+                    <!-- =================================================
+                         BOTÕES
+                    ================================================== -->
 
+                    <div class="hero-buttons">
 
-</div>
 
-</div>
+                        <a
+                            href="https://www.linkedin.com/in/gustavo-schiavinato/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
 
+                            LinkedIn
 
-<aside class="profile">
+                        </a>
 
 
-<img
-    class="photo"
-    src="https://github.com/GustavoSchiavinato.png"
-    alt="Foto de Gustavo Henrique Schiavinato Rezende"
-    onerror="this.style.display='none'"
->
+                        <a
+                            href="https://github.com/GustavoSchiavinato"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
 
+                            GitHub
 
-<div
-    class="photo-note"
-    data-i18n="profile.photoNote">
+                        </a>
 
-    Foto carregada diretamente do perfil do GitHub
 
-</div>
+                        <a
+                            href="#contato"
+                            class="btn btn-secondary"
+                            data-i18n="btn_contact"
+                        >
 
+                            Vamos conversar
 
-<h3>
+                        </a>
 
-    Gustavo Henrique Schiavinato Rezende
 
-</h3>
+                    </div>
 
 
-<p data-i18n="profile.location">
+                </div>
 
-    Curitiba / Paraná
 
-</p>
 
+                <!-- =================================================
+                     PERFIL
+                ================================================== -->
 
-<div class="profile-stat">
+                <div class="hero-profile">
 
-<strong>
-    20+ anos
-</strong>
 
-<span data-i18n="profile.stat1">
+                    <div class="profile-photo">
 
-    de experiência profissional em TI
 
-</span>
+                        <!--
 
-</div>
+                            FOTO SERÁ ADICIONADA DEPOIS.
 
+                            Arquivo:
 
-<div class="profile-stat">
+                            img/foto.jpg
 
-<strong>
-    ERP + SQL
-</strong>
+                        -->
 
-<span data-i18n="profile.stat2">
+                        <div class="profile-placeholder">
 
-    sustentação, dados e análise de sistemas
+                            <img
+                                class="photo"
+                                src="https://github.com/GustavoSchiavinato.png"
+                                alt="Foto de Gustavo Henrique Schiavinato Rezende"
+                                onerror="this.style.display='none'"
+                            >
 
-</span>
+                        </div>
 
-</div>
 
+                    </div>
 
-<div class="profile-stat">
 
-<strong data-i18n="profile.stat3Title">
 
-    Visão ponta a ponta
+                    <!-- =================================================
+                         CARDS DO PERFIL
+                    ================================================== -->
 
-</strong>
+                    <div class="profile-info">
 
-<span data-i18n="profile.stat3">
 
-    do suporte técnico à evolução de sistemas
+                        <div class="profile-card">
 
-</span>
+                            <strong>
+                                20+
+                            </strong>
 
-</div>
+                            <span
+                                data-i18n="profile_years"
+                            >
+                                Anos de experiência em TI
+                            </span>
 
+                        </div>
 
-</aside>
 
-</div>
+                        <div class="profile-card">
 
-</header>
+                            <strong>
+                                ERP + SQL
+                            </strong>
 
+                            <span
+                                data-i18n="profile_erp"
+                            >
+                                Sistemas, dados e análise
+                            </span>
 
+                        </div>
 
-<section id="sobre">
 
-<div class="container">
+                        <div class="profile-card">
 
+                            <strong
+                                data-i18n="profile_systems_title"
+                            >
+                                Sistemas
+                            </strong>
 
-<div class="section-head">
+                            <span
+                                data-i18n="profile_systems_description"
+                            >
+                                Suporte técnico e evolução
+                            </span>
 
+                        </div>
 
-<span
-    class="eyebrow"
-    data-i18n="about.eyebrow">
 
-    Sobre mim
+                    </div>
 
-</span>
 
+                </div>
 
-<h2 data-i18n="about.title">
 
-    Uma carreira construída na prática.
+            </div>
 
-</h2>
+        </section>
 
 
-<p
-    class="muted"
-    data-i18n="about.description">
+        <!-- =================================================
+             SOBRE
+        ================================================== -->
 
-    Minha trajetória profissional evoluiu do Suporte Técnico N1/N2/N3 para a
-    atuação como Analista de Sistemas, com experiência em ERP, SQL Server, análise
-    de incidentes, dados e homologação. Essa experiência me permite investigar
-    problemas, compreender o impacto para o usuário e colaborar com equipes de
-    desenvolvimento e áreas de negócio na evolução e melhoria dos sistemas
-    corporativos.
+        <section
+            id="sobre"
+            class="content-section"
+        >
 
-</p>
+            <div class="container">
 
+                <div class="section-title">
 
-</div>
+                    <span
+                        data-i18n="about_label"
+                    >
+                        SOBRE
+                    </span>
 
+                    <h2
+                       data-i18n="about_title"
+                    >
+                        Perfil Profissional
+                    </h2>
 
-<div class="cards">
+                </div>
 
 
-<div class="card">
+                <p
+                  data-i18n="about_description_1"
+                >
 
-<div class="icon">
-    🛠️
-</div>
+                    Analista de Suporte Técnico de Sistemas com
+                    mais de 20 anos de experiência em suporte a
+                    ambientes corporativos, aplicações, hardware,
+                    software e sistemas operacionais.
 
-<h3 data-i18n="about.card1Title">
-    Suporte Técnico de Sistemas
-</h3>
+                </p>
 
-<p data-i18n="about.card1Text">
 
-    Diagnóstico e resolução de incidentes, suporte a aplicações
-    corporativas, sistemas operacionais, hardware e software.
+                <p
+                  data-i18n="about_description_2"
+                >
 
-</p>
+                    Experiência de 2 anos e 6 meses como Analista
+                    de Sistemas, atuando com ERP, Microsoft SQL
+                    Server (SSMS), análise e resolução de incidentes,
+                    homologação de sistemas, levantamento e
+                    tratamento de dados, desenvolvimento de
+                    consultas SQL, documentação funcional e apoio
+                    às equipes de desenvolvimento.
 
-</div>
+                </p>
 
 
-<div class="card">
+                <p
+                  data-i18n="about_description_3"
+                >
 
-<div class="icon">
-    🔎
-</div>
+                    Vivência com ERP (ApolarNet e TOTVS),
+                    ferramentas de gestão de chamados e processos
+                    de melhoria contínua.
 
-<h3 data-i18n="about.card2Title">
-    Análise de Sistemas & ERP
-</h3>
+                </p>
 
-<p data-i18n="about.card2Text">
 
-    Análise de requisitos, investigação de problemas,
-    homologação e acompanhamento de melhorias em sistemas corporativos.
+                <p
+                  data-i18n="about_description_4"
+                >
 
+                    Conhecimentos em Java, Python, APIs REST,
+                    Git, metodologias ágeis (Scrum e Kanban) e
+                    Inteligência Artificial, adquiridos por meio
+                    de cursos e treinamentos.
 
-</p>
+                </p>
 
-</div>
+            </div>
 
+        </section>
 
-<div class="card">
 
-<div class="icon">
-    🗄️
-</div>
+    <!-- =====================================================
+         COMPETÊNCIAS
+    ====================================================== -->
+    
+    <section
+        id="competencias"
+        class="skills-section"
+    >
+    
+        <div class="container">
+    
+            <!-- TÍTULO -->
+    
+            <div class="section-title">
+    
+                <span
+                    data-i18n="skills_label"
+                >
+                    COMPETÊNCIAS
+                </span>
+    
+                <h2
+                    data-i18n="skills_title"
+                >
+                    Conhecimentos e Tecnologias
+                </h2>
+    
+            </div>
+    
+    
+            <!-- =================================================
+                 GRID DE COMPETÊNCIAS
+            ================================================== -->
+    
+            <div class="skills-grid">
+    
+    
+                <!-- SQL SERVER -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🗄️
+                    </div>
+    
+                    <h3>
+                        SQL Server
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- ERP -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🏢
+                    </div>
+    
+                    <h3>
+                        ERP
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- APOLARNET -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🏠
+                    </div>
+    
+                    <h3>
+                        ApolarNet
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- TOTVS -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        💼
+                    </div>
+    
+                    <h3>
+                        TOTVS
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- SALESFORCE -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ☁️
+                    </div>
+    
+                    <h3>
+                        Salesforce
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- JAVA -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ☕
+                    </div>
+    
+                    <h3>
+                        Java
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- PYTHON -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🐍
+                    </div>
+    
+                    <h3>
+                        Python
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- APIs REST -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🔗
+                    </div>
+    
+                    <h3>
+                        APIs REST
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- GIT / GITHUB -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🔀
+                    </div>
+    
+                    <h3>
+                        Git / GitHub
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- MOVIDESK -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🎫
+                    </div>
+    
+                    <h3>
+                        Movidesk
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- NOTION -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        📝
+                    </div>
+    
+                    <h3>
+                        Notion
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- MICROSOFT EXCEL -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        📊
+                    </div>
+    
+                    <h3>
+                        Microsoft Excel
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- WINDOWS -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🪟
+                    </div>
+    
+                    <h3>
+                        Windows
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- LINUX -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🐧
+                    </div>
+    
+                    <h3>
+                        Linux
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- POSTMAN -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        🚀
+                    </div>
+    
+                    <h3>
+                        Postman
+                    </h3>
+    
+                </article>
+    
+    
+                <!-- VS CODE -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        💻
+                    </div>
+    
+                    <h3>
+                        VS Code
+                    </h3>
+    
+                </article>
+
+
+                <!-- ITIL -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ⚙️
+                    </div>
+    
+                    <h3>
+                        ITIL
+                    </h3>
+    
+                </article>
+
+
+                <!-- ChatGPT -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ֎
+                    </div>
+    
+                    <h3>
+                        ChatGPT
+                    </h3>
+    
+                </article>    
+
+
+                <!-- Microsoft Copilot -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ✨
+                    </div>
+    
+                    <h3>
+                        Microsoft Copilot
+                    </h3>
+    
+                </article>
+
+
+                <!-- Google Gemini -->
+    
+                <article class="skill-card">
+    
+                    <div class="skill-icon">
+                        ♊
+                    </div>
+    
+                    <h3>
+                        Google Gemini
+                    </h3>
+    
+                </article> 
+    
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    <!-- =====================================================
+         FIM COMPETÊNCIAS
+    ====================================================== -->
+
+      <!-- =====================================================
+         CARREIRA
+    ====================================================== -->
+
+    <section
+        id="carreira"
+        class="career-section"
+    >
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+
+            <div class="section-title">
+
+                <span
+                    data-i18n="career_label"
+                >
+                    CARREIRA
+                </span>
+
+                <h2
+                    data-i18n="career_title"
+                >
+                    Trajetória profissional
+                </h2>
+
+            </div>
+
+
+            <!-- LINHA DO TEMPO -->
+
+            <div class="career-timeline">
+
+
+                <!-- =================================================
+                     APOLAR IMÓVEIS
+                ================================================== -->
+
+                <article class="career-item">
+
+                    <div class="career-date">
+
+                        09/2023 – 03/2026
+
+                    </div>
+
+
+                    <div class="career-marker"></div>
+
+
+                    <div class="career-content">
+
+                        <h3
+                            data-i18n="career_apolar_title"
+                        >
+                            Analista de Sistemas
+                        </h3>
+
+
+                        <h4
+                            data-i18n="career_apolar_enterprise"
+                        >
+                            Apolar Imóveis
+                        </h4>
+
+
+                        <p
+                            data-i18n="career_apolar_description"
+                        >
+                            Atuação na análise e resolução de
+                            incidentes, homologação de sistemas,
+                            levantamento e tratamento de dados,
+                            desenvolvimento de consultas SQL,
+                            documentação funcional e apoio às
+                            equipes de desenvolvimento.
+                        </p>
+
+
+                        <div class="career-tags">
+
+                            <span>
+                                ApolarNet
+                            </span>
+
+                            <span>
+                                SQL Server
+                            </span>
+
+                            <span>
+                                SQL
+                            </span>
+
+                            <span>
+                                Movidesk
+                            </span>
+
+                            <span>
+                                Notion
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     GRUPO BOTICÁRIO
+                ================================================== -->
+
+                <article class="career-item">
+
+                    <div class="career-date">
+
+                        01/2022 – 09/2022
+
+                    </div>
+
+
+                    <div class="career-marker"></div>
+
+
+                    <div class="career-content">
+
+                        <h3
+                            data-i18n="career_boticario_title"
+                        >
+                            Analista de Suporte Técnico N1
+                        </h3>
+
+
+                        <h4
+                            data-i18n="career_boticario_enterprise"
+                        >
+                            Premier IT Global Services (Cliente: Grupo Boticário)
+                        </h4>
+
+
+                        <p
+                            data-i18n="career_boticario_description"
+                        >
+                            Suporte remoto às lojas, análise e
+                            resolução de incidentes em sistemas
+                            de PDV, atendimento de chamados e
+                            suporte a sistemas e equipamentos
+                            relacionados à operação das lojas.
+                        </p>
+
+
+                        <div class="career-tags">
+
+                            <span>
+                                TOTVS
+                            </span>
+
+                            <span>
+                                Linx
+                            </span>
+
+                            <span>
+                                CliSiTef
+                            </span>
+
+                            <span>
+                                Salesforce
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     NETNEWS
+                ================================================== -->
+
+                <article class="career-item">
+
+                    <div class="career-date">
+
+                        10/2019 – 07/2020
+
+                    </div>
+
+
+                    <div class="career-marker"></div>
+
+
+                    <div class="career-content">
+
+                        <h3
+                            data-i18n="career_netnews_title"
+                        >
+                            Analista de Suporte Técnico N2
+                        </h3>
+
+
+                        <h4
+                            data-i18n="career_netnews_enterprise"
+                        >
+                            Netnews Serviços em Informática
+                        </h4>
+
+
+                        <p
+                            data-i18n="career_netnews_description"
+                        >
+                            Diagnóstico e resolução de incidentes
+                            de hardware e software, manutenção
+                            de computadores e notebooks,
+                            instalação e configuração de Windows
+                            e aplicações corporativas.
+                        </p>
+
+
+                        <div class="career-tags">
+
+                            <span>
+                                Windows
+                            </span>
+
+                            <span>
+                                Hardware
+                            </span>
+
+                            <span>
+                                Software
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     STEFANINI / BRF
+                ================================================== -->
+
+                <article class="career-item">
+
+                    <div class="career-date">
+
+                        10/2013 – 05/2016
+
+                    </div>
+
+
+                    <div class="career-marker"></div>
+
+
+                    <div class="career-content">
+
+                        <h3
+                            data-i18n="career_brf_title"
+                        >
+                            Analista de Suporte Técnico N2
+                        </h3>
+
+
+                        <h4 
+                            data-i18n="career_brf_enterprise"
+                        >
+                            Stefanini IT Solutions (Cliente: BRF S.A.)
+                        </h4>
+
+
+                        <p
+                            data-i18n="career_brf_description"
+                        >
+                            Suporte N2 para estações de trabalho
+                            e sistemas corporativos, atendimento
+                            remoto, preparação de ambientes de
+                            testes, criação de imagens Windows,
+                            execução de testes e acompanhamento
+                            de implantação de softwares e
+                            equipamentos.
+                        </p>
+
+
+                        <div class="career-tags">
+
+                            <span>
+                                Windows
+                            </span>
+
+                            <span>
+                                TeamViewer
+                            </span>
+
+                            <span>
+                                Homologação
+                            </span>
+
+                            <span>
+                                Suporte N2
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PREMIER IT
+                ================================================== -->
+
+                <article class="career-item">
+
+                    <div class="career-date">
+
+                        08/2008 – 09/2012
+
+                    </div>
+
+
+                    <div class="career-marker"></div>
+
+
+                    <div class="career-content">
+
+                        <h3
+                            data-i18n="career_premier_title"
+                        >
+                            Analista de Suporte Técnico N3
+                        </h3>
 
-<h3 data-i18n="about.card3Title">
-    Dados & SQL
-</h3>
 
-<p data-i18n="about.card3Text">
+                        <h4 
+                            data-i18n="career_premier_enterprise"
+                        >
+                            Premier IT Global Services
+                        </h4>
 
-    Consultas e scripts SQL para extração, atualização,
-    tratamento e análise de dados utilizando Microsoft SQL Server.
 
-</p>
+                        <p
+                            data-i18n="career_premier_description"
+                        >
+                            Suporte N3 em hardware, software e
+                            sistemas operacionais, administração
+                            de usuários e permissões no Active
+                            Directory, instalação e configuração
+                            de equipamentos e aplicações
+                            corporativas, além de apoio aos
+                            analistas N1 e N2.
+                        </p>
 
-</div>
 
+                        <div class="career-tags">
 
-<div class="card">
+                            <span>
+                                Windows
+                            </span>
 
-<div class="icon">
-    🤝
-</div>
+                            <span>
+                                Linux
+                            </span>
 
-<h3 data-i18n="about.card4Title">
-    Negócio & Tecnologia
-</h3>
+                            <span>
+                                Active Directory
+                            </span>
 
-<p data-i18n="about.card4Text">
+                            <span>
+                                TeamViewer
+                            </span>
 
-    Interface com usuários e equipes de desenvolvimento,
-    transformando demandas e evidências em requisitos e soluções.
+                        </div>
 
-</p>
+                    </div>
 
-</div>
+                </article>
 
 
-</div>
+            </div>
 
-</div>
 
-</section>
+        </div>
 
+    </section>
 
 
-<section id="competencias">
+    <!-- =====================================================
+         FIM CARREIRA
+    ====================================================== -->
 
-<div class="container">
 
+    <!-- =====================================================
+         IMPACTO
+    ====================================================== -->
 
-<div class="section-head">
+    <section
+        id="impacto"
+        class="impact-section"
+    >
 
+        <div class="container">
 
-<span
-    class="eyebrow"
-    data-i18n="skills.eyebrow">
 
-    Competências
+            <!-- TÍTULO -->
 
-</span>
+            <div class="section-title">
 
+                <span
+                    data-i18n="impact_label"
+                >
+                    IMPACTO
+                </span>
 
-<h2 data-i18n="skills.title">
+                <h2
+                    data-i18n="impact_title"
+                >
+                    Experiência que gera valor
+                </h2>
 
-    Conhecimento técnico com visão de ambiente corporativo.
+            </div>
 
-</h2>
 
+            <!-- CARDS -->
 
-</div>
+            <div class="impact-grid">
 
 
-<div class="tech-grid">
+                <!-- EXPERIÊNCIA -->
 
+                <article class="impact-card">
 
-<div class="tech">
+                    <strong>
+                        20+
+                    </strong>
 
-<h3>
-    💻
-    <span data-i18n="skills.tech1Title">
-        Linguagens
-    </span>
-</h3>
+                    <span
+                        data-i18n="impact_experience"
+                    >
+                        Anos de experiência em TI
+                    </span>
 
-<p>
-    SQL · Java · Python · APIs REST
-</p>
+                </article>
 
-</div>
 
+                <!-- EMPRESAS -->
 
-<div class="tech">
+                <article class="impact-card">
 
-<h3>
-    🗃️
-    <span data-i18n="skills.tech2Title">
-        Banco de Dados
-    </span>
-</h3>
+                    <strong>
+                        5
+                    </strong>
 
-<p>
-    Microsoft SQL Server (SSMS) · PostgreSQL · MySQL · Oracle
-</p>
+                    <span
+                        data-i18n="impact_companies"
+                    >
+                        Experiências profissionais
+                    </span>
 
-</div>
+                </article>
 
 
-<div class="tech">
+                <!-- ERP -->
 
-<h3>
-    🏢
-    <span data-i18n="skills.tech3Title">
-        ERP & Aplicações
-    </span>
-</h3>
+                <article class="impact-card">
 
-<p>
-    ApolarNet · TOTVS · Linx · CliSiTef
-</p>
+                    <strong>
+                        ERP
+                    </strong>
 
-</div>
+                    <span
+                        data-i18n="impact_erp"
+                    >
+                        Experiência com sistemas corporativos
+                    </span>
 
+                </article>
 
-<div class="tech">
 
-<h3>
-    🔗
-    <span data-i18n="skills.tech4Title">
-        CRM & Gestão
-    </span>
-</h3>
+                <!-- SQL -->
 
-<p>
-    Salesforce · Movidesk · Notion · Trello
-</p>
+                <article class="impact-card">
 
-</div>
+                    <strong>
+                        SQL
+                    </strong>
 
+                    <span
+                        data-i18n="impact_sql"
+                    >
+                        Consultas, análise e tratamento de dados
+                    </span>
 
-<div class="tech">
+                </article>
 
-<h3>
-    🛠️
-    <span data-i18n="skills.tech5Title">
-        Ferramentas
-    </span>
-</h3>
 
-<p>
-    Excel · Postman · VS Code · IntelliJ IDEA · Eclipse · PyCharm · Katalon Studio
-</p>
+            </div>
 
-</div>
 
+        </div>
 
-<div class="tech">
+    </section>
 
-<h3>
-    🌿
-    <span data-i18n="skills.tech6Title">
-        Versionamento
-    </span>
-</h3>
 
-<p>
-    Git · GitHub
-</p>
+    <!-- =====================================================
+         FIM IMPACTO
+    ====================================================== -->
 
-</div>
 
+    <!-- =====================================================
+         CASES
+    ====================================================== -->
 
-<div class="tech">
+    <section
+        id="cases"
+        class="cases-section"
+    >
 
-<h3>
-    🤖
-    <span data-i18n="skills.tech7Title">
-        IA & Produtividade
-    </span>
-</h3>
+        <div class="container">
 
-<p>
-    ChatGPT · Microsoft Copilot · GitHub Copilot · Gemini · NotebookLM
-</p>
 
-</div>
+            <!-- TÍTULO -->
 
+            <div class="section-title">
 
-<div class="tech">
+                <span
+                    data-i18n="cases_label"
+                >
+                    CASES
+                </span>
 
-<h3>
-    📋
-    <span data-i18n="skills.tech8Title">
-        Metodologias
-    </span>
-</h3>
+                <h2
+                    data-i18n="cases_title"
+                >
+                    Cases de destaque
+                </h2>
 
-<p>
-    Scrum · Kanban · ITIL
-</p>
+            </div>
 
-</div>
 
+            <!-- GRID DE CASES -->
 
-</div>
+            <div class="cases-grid">
 
 
-<div
-    class="card"
-    style="margin-top:20px"
->
+                <!-- =================================================
+                     CASE 1
+                ================================================== -->
 
+                <article class="case-card">
 
-<h3 data-i18n="skills.softTitle">
+                    <span class="case-category"
+                          data-i18n="case_incidents_category"
+                    >
 
-    Competências comportamentais
+                        ERP APOLAR
 
-</h3>
+                    </span>
 
 
-<div class="skills">
+                    <h3
+                        data-i18n="case_incidents_title"
+                    >
 
-<span class="tag" data-i18n="skills.tag1">
-    Pensamento Analítico
-</span>
+                        Investigação de Incidentes
 
-<span class="tag" data-i18n="skills.tag2">
-    Resolução de Problemas
-</span>
+                    </h3>
 
-<span class="tag" data-i18n="skills.tag3">
-    Comunicação Assertiva
-</span>
 
-<span class="tag" data-i18n="skills.tag4">
-    Trabalho em Equipe
-</span>
+                    <p
+                        data-i18n="case_incidents_description"
+                    >
 
-<span class="tag" data-i18n="skills.tag5">
-    Proatividade
-</span>
+                        Análise de inconsistências no ERP
+                        ApolarNet utilizando SQL Server para
+                        identificação de causas e definição
+                        de soluções.
 
-<span class="tag" data-i18n="skills.tag6">
-    Melhoria Contínua
-</span>
+                    </p>
 
-</div>
+                </article>
 
-</div>
 
-</div>
+                <!-- =================================================
+                     CASE 2
+                ================================================== -->
 
-</section>
+                <article class="case-card">
 
+                    <span class="case-category"
+                          data-i18n="case_data_category"
+                    >
 
+                        SQL & DADOS
 
-<section id="carreira">
+                    </span>
 
-<div class="container">
 
+                    <h3
+                        data-i18n="case_data_title"
+                    >
 
-<div class="section-head">
+                        Dados para o Negócio
 
+                    </h3>
 
-<span
-    class="eyebrow"
-    data-i18n="career.eyebrow">
 
-    Trajetória profissional
+                    <p
+                        data-i18n="case_data_description"
+                    >
 
-</span>
+                        Desenvolvimento de consultas e scripts
+                        SQL para extração, tratamento e análise
+                        de dados, apoiando relatórios e decisões.
 
+                    </p>
 
-<h2 data-i18n="career.title">
 
-    De Suporte Técnico a Analista de Sistemas.
+                </article>
 
-</h2>
 
+                <!-- =================================================
+                     CASE 3
+                ================================================== -->
 
-<p
-    class="muted"
-    data-i18n="career.description">
+                <article class="case-card">
 
-    Uma evolução profissional baseada em experiência prática,
-    ambientes corporativos e resolução de problemas.
+                    <span class="case-category"
+                          data-i18n="case_testing_category"
+                    >
 
-</p>
+                        HOMOLOGAÇÃO
 
+                    </span>
 
-</div>
 
+                    <h3
+                        data-i18n="case_testing_title"
+                    >
 
-<div class="timeline">
+                        Validação de Soluções
 
+                    </h3>
 
-<article class="job">
 
-<span class="dot"></span>
+                    <p
+                        data-i18n="case_testing_description"
+                    >
 
-<span class="date">
-    09/2023 — 03/2026
-</span>
+                        Preparação de cenários, execução de
+                        testes e homologação de correções e
+                        novas funcionalidades antes da
+                        publicação em produção.
 
-<h3 data-i18n="career.apolarTitle">
-    Analista de Sistemas · Apolar Imóveis
-</h3>
+                    </p>
 
+                </article>
 
-<ul>
 
-<li data-i18n="career.apolar1">
-    Atuação no suporte e evolução do ERP ApolarNet, realizando análise de incidentes, correções e melhorias contínuas no sistema.
-</li>
+                <!-- =================================================
+                     CASE 4
+                ================================================== -->
 
-<li data-i18n="career.apolar2">
-    Levantamento, análise e tratamento de dados para identificação de inconsistências.
-</li>
+                <article class="case-card">
 
-<li data-i18n="career.apolar3">
-    Desenvolvimento e otimização de consultas e scripts SQL no Microsoft SQL Server.
-</li>
+                    <span class="case-category"
+                          data-i18n="case_requirements_category"
+                    >
 
-<li data-i18n="career.apolar4">
-    Homologação de correções e novas funcionalidades antes da publicação em produção.
-</li>
+                        REQUISITOS
 
-<li data-i18n="career.apolar5">
-    Interface com usuários e desenvolvimento para análise de requisitos e validação de soluções.
-</li>
+                    </span>
 
-<li data-i18n="career.apolar6">
-    Documentação de evidências e especificação de requisitos funcionais e técnicos usando Movidesk e Notion.
-</li>
 
-</ul>
+                    <h3
+                        data-i18n="case_requirements_title"
+                    >
 
-</article>
+                        Comunicação entre Negócio e Dev
 
+                    </h3>
 
 
-<article class="job">
+                    <p
+                        data-i18n="case_requirements_description"
+                    >
 
-<span class="dot"></span>
+                        Levantamento de requisitos, registro de
+                        evidências e documentação funcional e
+                        técnica para direcionamento das demandas
+                        às equipes de desenvolvimento.
 
-<span class="date">
-    01/2022 — 09/2022
-</span>
+                    </p>
 
-<h3 data-i18n="career.boticarioTitle">
-    Analista de Suporte Técnico N1 · Premier IT · Cliente Grupo Boticário
-</h3>
+                </article>
 
 
-<ul>
+            </div>
 
-<li data-i18n="career.boticario1">
-    Suporte remoto às lojas e resolução de incidentes em sistemas de frente de caixa.
-</li>
 
-<li data-i18n="career.boticario2">
-    Atendimento via telefone e Salesforce.
-</li>
+        </div>
 
-<li data-i18n="career.boticario3">
-    Suporte a TOTVS, OmniShop, PDV Móvel, Linx e CliSiTef.
-</li>
+    </section>
 
-<li data-i18n="career.boticario4">
-    Atuação em incidentes envolvendo TEF, Pin Pad, impressoras fiscais e conectividade.
-</li>
 
-<li data-i18n="career.boticario5">
-    Atuação como Backup Focal e apoio na validação de chamados.
-</li>
+    <!-- =====================================================
+         FIM CASES
+    ====================================================== -->
 
-</ul>
 
-</article>
+    <!-- =====================================================
+         FORMAÇÃO E CERTIFICAÇÕES
+    ====================================================== -->
 
+    <section
+        id="formacao"
+        class="education-section"
+    >
 
+        <div class="container">
 
-<article class="job">
 
-<span class="dot"></span>
+            <!-- TÍTULO -->
 
-<span class="date">
-    10/2019 — 07/2020
-</span>
+            <div class="section-title">
 
-<h3 data-i18n="career.netnewsTitle">
-    Analista de Suporte Técnico N2 · Netnews Serviços em Informática
-</h3>
+                <span
+                    data-i18n="education_label"
+                >
+                    FORMAÇÃO
+                </span>
 
+                <h2
+                    data-i18n="education_title"
+                >
+                    Formação e certificações
+                </h2>
 
-<ul>
+            </div>
 
-<li data-i18n="career.netnews1">
-    Diagnóstico e resolução de incidentes de hardware e software.
-</li>
 
-<li data-i18n="career.netnews2">
-    Manutenção preventiva e corretiva de desktops e notebooks.
-</li>
+            <!-- =================================================
+                 FORMAÇÃO PRINCIPAL
+            ================================================== -->
 
-<li data-i18n="career.netnews3">
-    Instalação e configuração de Windows e aplicações corporativas.
-</li>
+            <div class="education-main">
 
-<li data-i18n="career.netnews4">
-    Backup e recuperação de dados.
-</li>
+                <div class="education-icon">
+                    TD
+                </div>
 
-</ul>
 
-</article>
+                <div class="education-content">
 
+                    <h3
+                        data-i18n="education_degree"
+                    >
+                        Tecnologia em Processamento de Dados – Graduação
+                    </h3>
 
+                    <p>
+                        UNOPAR
+                    </p>
 
-<article class="job">
+                    <span
+                        data-i18n="education_completion"
+                    >
+                        Conclusão em 2005
+                    </span>
 
-<span class="dot"></span>
+                </div>
 
-<span class="date">
-    10/2013 — 05/2016
-</span>
+            </div>
 
-<h3 data-i18n="career.stefaniniTitle">
-    Analista de Suporte Técnico N2 · Stefanini IT Solutions · Cliente BRF S.A.
-</h3>
+            <!-- =================================================
+                 PÓS-GRADUAÇÃO
+            ================================================== -->
 
+            <div class="education-main">
 
-<ul>
+                <div class="education-icon">
+                    AI
+                </div>
 
-<li data-i18n="career.stefanini1">
-    Suporte N2 a estações de trabalho e sistemas corporativos.
-</li>
 
-<li data-i18n="career.stefanini2">
-    Suporte remoto às unidades da Comfrio.
-</li>
+                <div class="education-content">
 
-<li data-i18n="career.stefanini3">
-    Preparação de ambientes de teste, criação de imagens Windows e execução de testes de homologação.
-</li>
+                    <h3
+                        data-i18n="education_postgraduate"
+                    >
+                        INTELIGÊNCIA ARTIFICIAL E MACHINE LEARNING – Pós-graduação
+                    </h3>
 
-<li data-i18n="career.stefanini4">
-    Acompanhamento de implantação de softwares e equipamentos.
-</li>
+                    <p>
+                        UniCesumar
+                    </p>
 
-</ul>
+                    <span
+                        data-i18n="education_postgraduate_status"
+                    >
+                        Em andamento
+                    </span>
 
-</article>
+                </div>
 
+            </div>
 
 
-<article class="job">
+            <!-- =================================================
+                 CURSOS
+            ================================================== -->
 
-<span class="dot"></span>
+            <div class="courses-grid">
 
-<span class="date">
-    08/2008 — 09/2012
-</span>
 
-<h3 data-i18n="career.premierTitle">
-    Analista de Suporte Técnico N3 · Premier IT Global Services
-</h3>
+                <!-- PYTHON -->
 
+                <article class="course-card">
 
-<ul>
+                    <div class="course-icon">
+                        Py
+                    </div>
 
-<li data-i18n="career.premier1">
-    Suporte N3 em hardware, software e sistemas Windows e Linux.
-</li>
 
-<li data-i18n="career.premier2">
-    Administração de Active Directory, usuários e permissões.
-</li>
+                    <div class="course-content">
 
-<li data-i18n="career.premier3">
-    Instalação e configuração de equipamentos e aplicações corporativas.
-</li>
+                        <h3
+                           data-i18n="course_python"
+                        >
+                            Python do Zero a
+                            Inteligência Artificial
+                        </h3>
 
-<li data-i18n="career.premier4">
-    Suporte técnico aos analistas N1 e N2 e atendimento remoto.
-</li>
+                        <p>
+                            Udemy
+                        </p>
 
-</ul>
+                    </div>
 
-</article>
 
+                    <span class="course-year">
+                        2026
+                    </span>
 
-</div>
+                </article>
 
-</div>
 
-</section>
+                <!-- SQL -->
 
+                <article class="course-card">
 
+                    <div class="course-icon">
+                        SQL
+                    </div>
 
-<section id="impacto">
 
-<div class="container">
+                    <div class="course-content">
 
+                        <h3
+                           data-i18n="course_sql"
+                        >
+                            SQL para Análise
+                            de Dados
+                        </h3>
 
-<div class="section-head">
+                        <p>
+                            Udemy
+                        </p>
 
-<span
-    class="eyebrow"
-    data-i18n="impact.eyebrow">
+                    </div>
 
-    Meu diferencial
 
-</span>
+                    <span class="course-year">
+                        2024
+                    </span>
 
+                </article>
 
-<h2 data-i18n="impact.title">
 
-    O que levo para uma equipe de tecnologia.
+                <!-- COPILOT -->
 
-</h2>
+                <article class="course-card">
 
-</div>
+                    <div class="course-icon">
+                        AI
+                    </div>
 
 
-<div class="impact">
+                    <div class="course-content">
 
+                        <h3>
+                            Microsoft Copilot AI
+                        </h3>
 
-<div class="impact-card">
+                        <p>
+                            DIO / Microsoft
+                        </p>
 
-<strong>
-    20+
-</strong>
+                    </div>
 
-<span data-i18n="impact.card1">
-    anos de experiência em TI
-</span>
 
-</div>
+                    <span class="course-year">
+                        2024
+                    </span>
 
+                </article>
 
-<div class="impact-card">
 
-<strong data-i18n="impact.card2_title">
-    Suporte Técnico N1 → N2 → N3 → Analista de Sistemas
-</strong>
+                <!-- JAVA -->
 
-<span data-i18n="impact.card2_text">
-    Evolução profissional construída ao longo de mais de 20 anos em diferentes níveis de atuação.
-</span>
+                <article class="course-card">
 
-</div>
+                    <div class="course-icon">
+                        Java
+                    </div>
 
 
-<div class="impact-card">
+                    <div class="course-content">
 
-<strong>
-    ERP + SQL Server
-</strong>
+                        <h3
+                           data-i18n="course_java"
+                        >
+                            Java Completo:
+                            POO + Projetos
+                        </h3>
 
-<span data-i18n="impact.card3">
-    Experiência prática em análise de sistemas, dados, suporte e evolução de aplicações corporativas
-</span>
+                        <p>
+                            Udemy
+                        </p>
 
-</div>
+                    </div>
 
 
-</div>
+                    <span class="course-year">
+                        2023
+                    </span>
 
-</div>
+                </article>
 
-</section>
 
+            </div>
 
 
-<section id="cases">
+        </div>
 
-<div class="container">
+    </section>
 
 
-<div class="section-head">
+    <!-- =====================================================
+         FIM FORMAÇÃO
+    ====================================================== -->
 
 
-<span
-    class="eyebrow"
-    data-i18n="cases.eyebrow">
+    <!-- =====================================================
+         CONTATO
+    ====================================================== -->
 
-    Cases profissionais
+    <section
+        id="contato"
+        class="contact-section"
+    >
 
-</span>
+        <div class="container">
 
 
-<h2 data-i18n="cases.title">
+            <div class="contact-box">
 
-    Como minha experiência se transforma em valor.
 
-</h2>
+                <!-- TEXTO -->
 
+                <div class="contact-intro">
 
-</div>
+                    <span
+                        class="contact-label"
+                        data-i18n="contact_label"
+                    >
+                        CONTATO
+                    </span>
 
 
-<div class="case-grid">
+                    <h2
+                        data-i18n="contact_title"
+                    >
+                        Vamos conversar?
+                    </h2>
 
 
-<div class="card case">
+                    <p
+                        data-i18n="contact_description"
+                    >
+                        Estou aberto a novas oportunidades
+                        e desafios.
+                    </p>
 
-<span
-    class="case-label"
-    data-i18n="cases.case1Label">
+                </div>
 
-    CASE 01 · SUPORTE E EVOLUÇÃO DE ERP
 
-</span>
+                <!-- LINKS -->
 
-<h3 data-i18n="cases.case1Title">
+                <div class="contact-links">
 
-    Análise de incidentes no ApolarNet
 
-</h3>
+                    <!-- E-MAIL -->
 
-<p data-i18n="cases.case1Text">
+                    <a
+                        href="mailto:gustavohsr_technology@outlook.com"
+                        class="contact-item"
+                    >
 
-    Atuação na análise de incidentes e inconsistências,
-    utilizando investigação técnica e dados do SQL Server
-    para apoiar a identificação de causas e a definição
-    de correções e melhorias.
+                        <span class="contact-icon">
+                            @
+                        </span>
 
-</p>
 
-</div>
+                        <span>
 
+                            <strong>
+                                E-mail
+                            </strong>
 
-<div class="card case">
+                            <small>
+                                gustavohsr_technology@outlook.com
+                            </small>
 
-<span
-    class="case-label"
-    data-i18n="cases.case2Label">
+                        </span>
 
-    CASE 02 · SQL SERVER & DADOS
+                    </a>
 
-</span>
 
-<h3 data-i18n="cases.case2Title">
+                    <!-- LINKEDIN -->
 
-    Dados para apoiar processos de negócio
+                    <a
+                        href="https://www.linkedin.com/in/gustavo-schiavinato/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
 
-</h3>
+                        <span class="contact-icon">
+                            in
+                        </span>
 
-<p data-i18n="cases.case2Text">
 
-    Criação e otimização de consultas e scripts SQL para extração,
-    atualização, tratamento e análise de dados,
-    apoiando áreas de negócio e relatórios.
+                        <span>
 
-</p>
+                            <strong>
+                                LinkedIn
+                            </strong>
 
-</div>
+                            <small>
+                                /in/gustavo-schiavinato
+                            </small>
 
+                        </span>
 
-<div class="card case">
+                    </a>
 
-<span
-    class="case-label"
-    data-i18n="cases.case3Label">
 
-    CASE 03 · HOMOLOGAÇÃO DE SISTEMAS
+                    <!-- GITHUB -->
 
-</span>
+                    <a
+                        href="https://github.com/GustavoSchiavinato"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
 
-<h3 data-i18n="cases.case3Title">
+                        <span class="contact-icon">
+                            GH
+                        </span>
 
-    Validação antes da produção
 
-</h3>
+                        <span>
 
-<p data-i18n="cases.case3Text">
+                            <strong>
+                                GitHub
+                            </strong>
 
-    Experiência em preparar cenários, executar testes e homologar
-    correções e novas funcionalidades, contribuindo para reduzir
-    riscos antes da publicação.
+                            <small>
+                                /GustavoSchiavinato
+                            </small>
 
-</p>
+                        </span>
 
-</div>
+                    </a>
 
 
-<div class="card case">
+                    <!-- LOCALIZAÇÃO -->
 
-<span
-    class="case-label"
-    data-i18n="cases.case4Label">
+                    <div class="contact-item">
 
-    CASE 04 · REQUISITOS E ANÁLISE DE SISTEMAS
+                        <span class="contact-icon">
+                            PR
+                        </span>
 
-</span>
 
-<h3 data-i18n="cases.case4Title">
+                        <span>
 
-    Conectando usuário e desenvolvimento
+                            <strong
+                                data-i18n="contact_location"
+                            >
+                                Localização
+                            </strong>
 
-</h3>
+                            <small>
+                                Curitiba / PR
+                            </small>
 
-<p data-i18n="cases.case4Text">
+                        </span>
 
-    Análise técnica de demandas, registro de evidências e documentação
-    de requisitos funcionais e técnicos para facilitar a comunicação
-    com a equipe de desenvolvimento.
+                    </div>
 
-</p>
 
-</div>
+                </div>
 
 
-</div>
+            </div>
 
-</div>
 
-</section>
+        </div>
 
+    </section>
 
 
-<section id="formacao">
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
 
-<div class="container">
+    <footer class="site-footer">
 
+        <div class="container footer-content">
 
-<div class="section-head">
 
+            <p>
 
-<span
-    class="eyebrow"
-    data-i18n="education.eyebrow">
+                © 2026 Gustavo Henrique Schiavinato Rezende.
+                <span
+                    data-i18n="footer_rights"
+                >
+                    Todos os direitos reservados.
+                </span>
 
-    Formação & aprendizado
+            </p>
 
-</span>
 
+            <p>
 
-<h2 data-i18n="education.title">
+                <span
+                    data-i18n="footer_developed"
+                >
+                    Desenvolvido com dedicação.
+                </span>
 
-    Experiência sólida com atualização constante.
+            </p>
 
-</h2>
 
+        </div>
 
-</div>
+    </footer>
 
 
-<div class="education">
+</main>
 
 
-<div class="card">
 
-<span
-    class="eyebrow"
-    data-i18n="education.card1Eyebrow">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-    Formação acadêmica
+    <footer>
 
-</span>
+        <div class="container">
 
-<h3 data-i18n="education.card1Title">
+            <p>
 
-    Tecnólogo em Processamento de Dados
+                © 2026 Gustavo Henrique
+                Schiavinato Rezende
 
-</h3>
+            </p>
 
-<p data-i18n="education.card1Text">
+        </div>
 
-    UNOPAR · Conclusão em 2005
+    </footer>
 
-</p>
 
-</div>
 
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
-<div class="card">
+    <script src="js/language.js"></script>
 
-<span class="eyebrow">
-    2026
-</span>
 
-<h3 data-i18n="education.card2Title">
-
-    Python do Zero a Inteligência Artificial
-
-</h3>
-
-<p>
-    Udemy
-</p>
-
-</div>
-
-
-<div class="card">
-
-<span class="eyebrow">
-    2024
-</span>
-
-<h3 data-i18n="education.card3Title">
-
-    SQL para Análise de Dados: do Básico ao Avançado
-
-</h3>
-
-<p>
-    Udemy
-</p>
-
-</div>
-
-
-<div class="card">
-
-<span class="eyebrow">
-    2024
-</span>
-
-<h3 data-i18n="education.card4Title">
-
-    Microsoft Copilot AI
-
-</h3>
-
-<p>
-    DIO · Microsoft
-</p>
-
-</div>
-
-
-<div class="card">
-
-<span class="eyebrow">
-    2023
-</span>
-
-<h3 data-i18n="education.card5Title">
-
-    Java Completo: POO + Projetos
-
-</h3>
-
-<p>
-    Udemy
-</p>
-
-</div>
-
-
-<div class="card">
-
-<span
-    class="eyebrow"
-    data-i18n="education.card6Eyebrow">
-
-    Idiomas
-
-</span>
-
-<h3 data-i18n="education.card6Title">
-
-    Inglês & Espanhol
-
-</h3>
-
-<p data-i18n="education.card6Text">
-
-    Inglês: intermediário em leitura/escrita e básico em conversação.
-    Espanhol: básico.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="contato">
-
-<div class="container">
-
-
-<div class="contact">
-
-
-<span
-    class="eyebrow"
-    data-i18n="contact.eyebrow">
-
-    Vamos conversar?
-
-</span>
-
-
-<h2 data-i18n="contact.title">
-
-    Estou aberto a novos desafios profissionais.
-
-</h2>
-
-
-<p
-    class="muted"
-    data-i18n="contact.description">
-
-    Busco oportunidades como Analista de Sistemas, Analista de Suporte Técnico de
-    Sistemas ou em funções relacionadas a ERP, SQL Server e suporte a aplicações 
-    corporativas, contribuindo com minha experiência prática, capacidade analítica e
-    foco na resolução de problemas.
-
-</p>
-
-
-<div class="actions">
-
-
-<a
-    class="btn primary"
-    href="mailto:gustavohsr_technology@outlook.com"
-    data-i18n="contact.email">
-
-    Enviar e-mail
-
-</a>
-
-
-<a
-    class="btn"
-    href="https://www.linkedin.com/in/gustavo-schiavinato/"
-    target="_blank">
-
-    LinkedIn ↗
-
-</a>
-
-
-<a
-    class="btn"
-    href="https://github.com/GustavoSchiavinato"
-    target="_blank">
-
-    GitHub ↗
-
-</a>
-
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="container">
-
-<span data-i18n="footer.copyright">
-
-    © 2026 Gustavo Henrique Schiavinato Rezende · Curitiba / Paraná ·
-
-</span>
-
-
-<a
-    href="https://github.com/GustavoSchiavinato"
-    target="_blank">
-
-    GitHub
-
-</a>
-
-·
-
-
-<a
-    href="https://www.linkedin.com/in/gustavo-schiavinato/"
-    target="_blank">
-
-    LinkedIn
-
-</a>
-
-
-</div>
-
-</footer>
-
-<script>
-
-/* =====================================================
-   SISTEMA DE IDIOMAS
-   PT-BR | EN | ES
-===================================================== */
-
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function(){
-
-        const translations = {
-
-
-/* =====================================================
-   PORTUGUÊS
-===================================================== */
-
-pt: {
-
-
-"menu.about":
-"Sobre",
-
-"menu.skills":
-"Competências",
-
-"menu.career":
-"Carreira",
-
-"menu.impact":
-"Impacto",
-
-"menu.cases":
-"Cases",
-
-"menu.education":
-"Formação",
-
-"menu.contact":
-"Contato",
-
-
-"hero.badge":
-"ANALISTA DE SUPORTE TÉCNICO DE SISTEMAS · ERP · SQL SERVER · ANALISTA DE SISTEMAS",
-
-"hero.title":
-"Experiência para transformar problemas em soluções.",
-
-"hero.description":
-"Profissional de tecnologia com mais de 20 anos de experiência em suporte técnico de sistemas e ambientes corporativos, com experiência de 2 anos e 6 meses como Analista de Sistemas atuando com ERP, SQL Server, análise de incidentes, dados e homologação. Minha trajetória conecta tecnologia e negócio com foco em confiabilidade, resolução de problemas e melhoria contínua.",
-
-"hero.button":
-"Conheça minha trajetória →",
-
-
-"profile.photoNote":
-"Foto carregada diretamente do perfil do GitHub",
-
-"profile.location":
-"Curitiba / Paraná",
-
-"profile.stat1":
-"de experiência profissional em TI",
-
-"profile.stat2":
-"sustentação, dados e análise de sistemas",
-
-"profile.stat3Title":
-"Visão ponta a ponta",
-
-"profile.stat3":
-"do suporte técnico à evolução de sistemas",
-
-
-"about.eyebrow":
-"Sobre mim",
-
-"about.title":
-"Uma carreira construída na prática.",
-
-"about.description":
-"Minha trajetória profissional evoluiu do Suporte Técnico N1/N2/N3 para a atuação como Analista de Sistemas, com experiência em ERP, SQL Server, análise de incidentes, dados e homologação. Essa experiência me permite investigar problemas, compreender o impacto para o usuário e colaborar com equipes de desenvolvimento e áreas de negócio na evolução e melhoria dos sistemas corporativos.",
-
-
-"about.card1Title":
-"Suporte Técnico de Sistemas",
-
-"about.card1Text":
-"Diagnóstico e resolução de incidentes, suporte a aplicações corporativas, sistemas operacionais, hardware e software.",
-
-"about.card2Title":
-"Análise de Sistemas & ERP",
-
-"about.card2Text":
-"Análise de requisitos, investigação de problemas, homologação e acompanhamento de melhorias em sistemas corporativos.",
-
-"about.card3Title":
-"Dados & SQL",
-
-"about.card3Text":
-"Consultas e scripts SQL para extração, atualização, tratamento e análise de dados utilizando Microsoft SQL Server.",
-
-"about.card4Title":
-"Negócio & Tecnologia",
-
-"about.card4Text":
-"Interface com usuários e equipes de desenvolvimento, transformando demandas e evidências em requisitos e soluções.",
-
-
-"skills.eyebrow":
-"Competências",
-
-"skills.title":
-"Conhecimento técnico com visão de ambiente corporativo.",
-
-"skills.tech1Title":
-"Linguagens",
-
-"skills.tech2Title":
-"Banco de Dados",
-
-"skills.tech3Title":
-"ERP & Aplicações",
-
-"skills.tech4Title":
-"CRM & Gestão",
-
-"skills.tech5Title":
-"Ferramentas",
-
-"skills.tech6Title":
-"Versionamento",
-
-"skills.tech7Title":
-"IA & Produtividade",
-
-"skills.tech8Title":
-"Metodologias",
-
-"skills.softTitle":
-"Competências comportamentais",
-
-"skills.tag1":
-"Pensamento Analítico",
-
-"skills.tag2":
-"Resolução de Problemas",
-
-"skills.tag3":
-"Comunicação Assertiva",
-
-"skills.tag4":
-"Trabalho em Equipe",
-
-"skills.tag5":
-"Proatividade",
-
-"skills.tag6":
-"Melhoria Contínua",
-
-
-"career.eyebrow":
-"Trajetória profissional",
-
-"career.title":
-"De Suporte Técnico a Analista de Sistemas.",
-
-"career.description":
-"Uma evolução profissional baseada em experiência prática, ambientes corporativos e resolução de problemas.",
-
-"career.apolarTitle":
-"Analista de Sistemas · Apolar Imóveis",
-
-"career.apolar1":
-"Atuação no suporte e evolução do ERP ApolarNet, realizando análise de incidentes, correções e melhorias contínuas no sistema.",
-
-"career.apolar2":
-"Levantamento, análise e tratamento de dados para identificação de inconsistências.",
-
-"career.apolar3":
-"Desenvolvimento e otimização de consultas e scripts SQL no Microsoft SQL Server.",
-
-"career.apolar4":
-"Homologação de correções e novas funcionalidades antes da publicação em produção.",
-
-"career.apolar5":
-"Interface com usuários e desenvolvimento para análise de requisitos e validação de soluções.",
-
-"career.apolar6":
-"Documentação de evidências e especificação de requisitos funcionais e técnicos usando Movidesk e Notion.",
-
-
-"career.boticarioTitle":
-"Analista de Suporte Técnico N1 · Premier IT · Cliente Grupo Boticário",
-
-"career.boticario1":
-"Suporte remoto às lojas e resolução de incidentes em sistemas de frente de caixa.",
-
-"career.boticario2":
-"Atendimento via telefone e Salesforce.",
-
-"career.boticario3":
-"Suporte a TOTVS, OmniShop, PDV Móvel, Linx e CliSiTef.",
-
-"career.boticario4":
-"Atuação em incidentes envolvendo TEF, Pin Pad, impressoras fiscais e conectividade.",
-
-"career.boticario5":
-"Atuação como Backup Focal e apoio na validação de chamados.",
-
-"career.netnewsTitle":
-"Analista de Suporte Técnico N2 · Netnews Serviços em Informática",
-
-"career.netnews1":
-"Diagnóstico e resolução de incidentes de hardware e software.",
-
-"career.netnews2":
-"Manutenção preventiva e corretiva de desktops e notebooks.",
-
-"career.netnews3":
-"Instalação e configuração de Windows e aplicações corporativas.",
-
-"career.netnews4":
-"Backup e recuperação de dados.",
-
-"career.stefaniniTitle":
-"Analista de Suporte Técnico N2 · Stefanini IT Solutions · Cliente BRF S.A.",
-
-"career.stefanini1":
-"Suporte N2 a estações de trabalho e sistemas corporativos.",
-
-"career.stefanini2":
-"Suporte remoto às unidades da Comfrio.",
-
-"career.stefanini3":
-"Preparação de ambientes de teste, criação de imagens Windows e execução de testes de homologação.",
-
-"career.stefanini4":
-"Acompanhamento de implantação de softwares e equipamentos.",
-
-"career.premierTitle":
-"Analista de Suporte Técnico N3 · Premier IT Global Services",
-
-"career.premier1":
-"Suporte N3 em hardware, software e sistemas Windows e Linux.",
-
-"career.premier2":
-"Administração de Active Directory, usuários e permissões.",
-
-"career.premier3":
-"Instalação e configuração de equipamentos e aplicações corporativas.",
-
-"career.premier4":
-"Suporte técnico aos analistas N1 e N2 e atendimento remoto.",
-
-
-"impact.eyebrow":
-"Meu diferencial",
-
-"impact.title":
-"O que levo para uma equipe de tecnologia.",
-
-"impact.card1":
-"anos de experiência em TI",
-
-"impact.card2_title":
-"Suporte Técnico N1 → N2 → N3 → Analista de Sistemas",
-
-"impact.card2_text":
-"Evolução profissional construída ao longo de mais de 20 anos em diferentes níveis de atuação.",
-
-"impact.card3":
-"Experiência prática em análise de sistemas, dados, suporte e evolução de aplicações corporativas.",
-
-
-"cases.eyebrow":
-"Cases profissionais",
-
-"cases.title":
-"Como minha experiência se transforma em valor.",
-
-"cases.case1Label":
-"CASE 01 · SUPORTE E EVOLUÇÃO DE ERP",
-
-"cases.case1Title":
-"Investigação de incidentes no ApolarNet",
-
-"cases.case1Text":
-"Atuação na análise de incidentes e inconsistências, utilizando investigação técnica e dados do SQL Server para apoiar a identificação de causas e a definição de correções e melhorias.",
-
-"cases.case2Label":
-"CASE 02 · SQL SERVER & DADOS",
-
-"cases.case2Title":
-"Dados para apoiar processos de negócio",
-
-"cases.case2Text":
-"Criação e otimização de consultas e scripts SQL para extração, atualização, tratamento e análise de dados, apoiando áreas de negócio e relatórios.",
-
-"cases.case3Label":
-"CASE 03 · HOMOLOGAÇÃO DE SISTEMAS",
-
-"cases.case3Title":
-"Validação antes da produção",
-
-"cases.case3Text":
-"Experiência em preparar cenários, executar testes e homologar correções e novas funcionalidades, contribuindo para reduzir riscos antes da publicação.",
-
-"cases.case4Label":
-"CASE 04 · REQUISITOS E ANÁLISE DE SISTEMAS",
-
-"cases.case4Title":
-"Conectando usuário e desenvolvimento",
-
-"cases.case4Text":
-"Análise técnica de demandas, registro de evidências e documentação de requisitos funcionais e técnicos para facilitar a comunicação com a equipe de desenvolvimento.",
-
-
-"education.eyebrow":
-"Formação & aprendizado",
-
-"education.title":
-"Experiência sólida com atualização constante.",
-
-"education.card1Eyebrow":
-"Formação acadêmica",
-
-"education.card1Title":
-"Tecnólogo em Processamento de Dados",
-
-"education.card1Text":
-"UNOPAR · Conclusão em 2005",
-
-"education.card2Title":
-"Python do Zero a Inteligência Artificial",
-
-"education.card3Title":
-"SQL para Análise de Dados: do Básico ao Avançado",
-
-"education.card4Title":
-"Microsoft Copilot AI",
-
-"education.card5Title":
-"Java Completo: POO + Projetos",
-
-"education.card6Eyebrow":
-"Idiomas",
-
-"education.card6Title":
-"Inglês & Espanhol",
-
-"education.card6Text":
-"Inglês: intermediário em leitura/escrita e básico em conversação. Espanhol: básico.",
-
-
-"contact.eyebrow":
-"Vamos conversar?",
-
-"contact.title":
-"Estou aberto a novos desafios profissionais.",
-
-"contact.description":
-"Busco oportunidades como Analista de Sistemas, Analista de Suporte Técnico de Sistemas ou em funções relacionadas a ERP, SQL Server e suporte a aplicações corporativas, contribuindo com minha experiência prática, capacidade analítica e foco na resolução de problemas.",
-
-"contact.email":
-"Enviar e-mail",
-
-
-"footer.copyright":
-"© 2026 Gustavo Henrique Schiavinato Rezende · Curitiba / Paraná ·"
-
-},
-
-
-
-/* =====================================================
-   INGLÊS
-===================================================== */
-
-en: {
-
-
-"menu.about":
-"About",
-
-"menu.skills":
-"Skills",
-
-"menu.career":
-"Career",
-
-"menu.impact":
-"Impact",
-
-"menu.cases":
-"Cases",
-
-"menu.education":
-"Education",
-
-"menu.contact":
-"Contact",
-
-
-"hero.badge":
-"SYSTEMS TECHNICAL SUPPORT ANALYST · ERP · SQL SERVER · SYSTEMS ANALYST",
-
-"hero.title":
-"Experience turning problems into solutions.",
-
-"hero.description":
-"Technology professional with over 20 years of experience in systems technical support and corporate environments, with 2 years and 6 months of experience as a Systems Analyst working with ERP, SQL Server, incident analysis, data, and testing/validation. My career connects technology and business with a focus on reliability, problem solving and continuous improvement.",
-
-"hero.button":
-"Explore my career →",
-
-
-"profile.photoNote":
-"Photo loaded directly from the GitHub profile",
-
-"profile.location":
-"Curitiba / Paraná",
-
-"profile.stat1":
-"of professional IT experience",
-
-"profile.stat2":
-"systems support, data and systems analysis",
-
-"profile.stat3Title":
-"End-to-end vision",
-
-"profile.stat3":
-"from technical support to systems evolution",
-
-
-"about.eyebrow":
-"About me",
-
-"about.title":
-"A career built through hands-on experience.",
-
-"about.description":
-"My professional career evolved from L1/L2/L3 Technical Support to working as a Systems Analyst, with experience in ERP, SQL Server, incident analysis, data, and testing/validation. This experience allows me to investigate issues, understand the impact on the user, and collaborate with development teams and business areas on the evolution and improvement of corporate systems.",
-
-
-"about.card1Title":
-"Systems Technical Support",
-
-"about.card1Text":
-"Troubleshooting and incident resolution, corporate applications support, operating systems, hardware, and software.",
-
-"about.card2Title":
-"Systems Analysis & ERP",
-
-"about.card2Text":
-"Requirements analysis, issue investigation, testing/validation, and monitoring of improvements in corporate systems.",
-
-"about.card3Title":
-"Data & SQL",
-
-"about.card3Text":
-"SQL queries and scripts for data extraction, updating, processing, and analysis using Microsoft SQL Server.",
-
-"about.card4Title":
-"Business & Technology",
-
-"about.card4Text":
-"Interface with users and development teams, transforming demands and evidence into requirements and solutions.",
-
-
-"skills.eyebrow":
-"Skills",
-
-"skills.title":
-"Technical knowledge with a corporate environment perspective.",
-
-"skills.tech1Title":
-"Languages",
-
-"skills.tech2Title":
-"Databases",
-
-"skills.tech3Title":
-"ERP & Applications",
-
-"skills.tech4Title":
-"CRM & Management",
-
-"skills.tech5Title":
-"Tools",
-
-"skills.tech6Title":
-"Version Control",
-
-"skills.tech7Title":
-"AI & Productivity",
-
-"skills.tech8Title":
-"Methodologies",
-
-"skills.softTitle":
-"Soft Skills",
-
-"skills.tag1":
-"Analytical Thinking",
-
-"skills.tag2":
-"Problem Solving",
-
-"skills.tag3":
-"Assertive Communication",
-
-"skills.tag4":
-"Teamwork",
-
-"skills.tag5":
-"Proactivity",
-
-"skills.tag6":
-"Continuous Improvement",
-
-
-"career.eyebrow":
-"Professional career",
-
-"career.title":
-"From Technical Support to Systems Analyst.",
-
-"career.description":
-"A professional evolution based on hands-on experience, corporate environments and problem solving.",
-
-"career.apolarTitle":
-"Systems Analyst · Apolar Imóveis",
-
-"career.apolar1":
-"Active role in the support and evolution of the ApolarNet ERP, performing incident analysis, bug fixes, and continuous improvements in the system.",
-
-"career.apolar2":
-"Data gathering, analysis and processing to identify inconsistencies.",
-
-"career.apolar3":
-"Development and optimization of SQL queries and scripts using Microsoft SQL Server.",
-
-"career.apolar4":
-"Validation of fixes and new features before production deployment.",
-
-"career.apolar5":
-"Interaction with users and development teams for requirements analysis and solution validation.",
-
-"career.apolar6":
-"Documentation of evidence and specification of functional and technical requirements using Movidesk and Notion.",
-
-"career.boticarioTitle":
-"L1 Technical Support Analyst · Premier IT · Client: Grupo Boticário",
-
-"career.boticario1":
-"Remote support for stores and resolution of incidents in point-of-sale systems.",
-
-"career.boticario2":
-"Customer service by phone and Salesforce.",
-
-"career.boticario3":
-"Support for TOTVS, OmniShop, Mobile POS, Linx and CliSiTef.",
-
-"career.boticario4":
-"Handling incidents involving TEF, Pin Pads, fiscal printers and connectivity.",
-
-"career.boticario5":
-"Backup Focal role and support in ticket validation.",
-
-"career.netnewsTitle":
-"L2 Technical Support Analyst · Netnews IT Services",
-
-"career.netnews1":
-"Diagnosis and resolution of hardware and software incidents.",
-
-"career.netnews2":
-"Preventive and corrective maintenance of desktops and notebooks.",
-
-"career.netnews3":
-"Installation and configuration of Windows and corporate applications.",
-
-"career.netnews4":
-"Data backup and recovery.",
-
-"career.stefaniniTitle":
-"L2 Technical Support Analyst · Stefanini IT Solutions · Client: BRF S.A.",
-
-"career.stefanini1":
-"N2 support for workstations and corporate systems.",
-
-"career.stefanini2":
-"Remote support for Comfrio units.",
-
-"career.stefanini3":
-"Preparation of test environments, Windows image creation and user acceptance testing.",
-
-"career.stefanini4":
-"Monitoring software and equipment deployment.",
-
-"career.premierTitle":
-"L3 Technical Support Analyst · Premier IT Global Services",
-
-"career.premier1":
-"N3 support for hardware, software and Windows and Linux systems.",
-
-"career.premier2":
-"Active Directory administration, users and permissions.",
-
-"career.premier3":
-"Installation and configuration of equipment and corporate applications.",
-
-"career.premier4":
-"Technical support for N1 and N2 analysts and remote assistance.",
-
-
-"impact.eyebrow":
-"My differentiator",
-
-"impact.title":
-"What I bring to a technology team.",
-
-"impact.card1":
-"years of IT experience",
-
-"impact.card2_title":
-"L1 → L2 → L3 Technical Support → Systems Analyst",
-
-"impact.card2_text":
-"Professional career evolution built over more than 20 years across different levels of performance.",
-
-"impact.card3":
-"Practical experience in systems analysis, data, support, and evolution of corporate applications.",
-
-
-"cases.eyebrow":
-"Professional cases",
-
-"cases.title":
-"How my experience creates value.",
-
-"cases.case1Label":
-"CASE 01 · ERP SUPPORT AND EVOLUTION",
-
-"cases.case1Title":
-"Incident investigation in ApolarNet",
-
-"cases.case1Text":
-"Experience analyzing incidents and inconsistencies, using technical investigation and SQL Server data to support root-cause identification and the definition of fixes and improvements.",
-
-"cases.case2Label":
-"CASE 02 · SQL SERVER & DATA",
-
-"cases.case2Title":
-"Data to support business processes",
-
-"cases.case2Text":
-"Creation and optimization of SQL queries and scripts for data extraction, updating, processing and analysis, supporting business areas and reports.",
-
-"cases.case3Label":
-"CASE 03 · SYSTEMS TESTING & VALIDATION",
-
-"cases.case3Title":
-"Validation before production",
-
-"cases.case3Text":
-"Experience preparing scenarios, executing tests and validating fixes and new features, helping reduce risks before deployment.",
-
-"cases.case4Label":
-"CASE 04 · SYSTEMS ANALYSIS & REQUIREMENTS",
-
-"cases.case4Title":
-"Connecting users and development",
-
-"cases.case4Text":
-"Technical analysis of demands, evidence recording and documentation of functional and technical requirements to facilitate communication with the development team.",
-
-
-"education.eyebrow":
-"Education & learning",
-
-"education.title":
-"Solid experience with continuous learning.",
-
-"education.card1Eyebrow":
-"Academic background",
-
-"education.card1Title":
-"Technology Degree in Data Processing",
-
-"education.card1Text":
-"UNOPAR · Completed in 2005",
-
-"education.card2Title":
-"Python from Zero to Artificial Intelligence",
-
-"education.card3Title":
-"SQL for Data Analysis: Basic to Advanced",
-
-"education.card4Title":
-"Microsoft Copilot AI",
-
-"education.card5Title":
-"Complete Java: OOP + Projects",
-
-"education.card6Eyebrow":
-"Languages",
-
-"education.card6Title":
-"English & Spanish",
-
-"education.card6Text":
-"English: intermediate reading/writing and basic conversation. Spanish: basic.",
-
-
-"contact.eyebrow":
-"Let's talk?",
-
-"contact.title":
-"I am open to new professional challenges.",
-
-"contact.description":
-"I am seeking opportunities as a Systems Analyst, Systems Technical Support Analyst, or in roles related to ERP, SQL Server, and corporate applications support, contributing with my practical experience, analytical capability, and focus on problem-solving.",
-
-"contact.email":
-"Send email",
-
-
-"footer.copyright":
-"© 2026 Gustavo Henrique Schiavinato Rezende · Curitiba / Paraná ·"
-
-},
-
-
-
-/* =====================================================
-   ESPANHOL
-===================================================== */
-
-es: {
-
-
-"menu.about":
-"Sobre mí",
-
-"menu.skills":
-"Competencias",
-
-"menu.career":
-"Trayectoria",
-
-"menu.impact":
-"Impacto",
-
-"menu.cases":
-"Casos",
-
-"menu.education":
-"Formación",
-
-"menu.contact":
-"Contacto",
-
-
-"hero.badge":
-"ANALISTA DE SOPORTE TÉCNICO DE SISTEMAS · ERP · SQL SERVER · ANALISTA DE SISTEMAS",
-
-"hero.title":
-"Experiencia para transformar problemas en soluciones.",
-
-"hero.description":
-"Profesional de tecnología con más de 20 años de experiencia en soporte técnico de sistemas y entornos corporativos, con 2 años y 6 meses de experiencia como Analista de Sistemas actuando con ERP, SQL Server, análisis de incidentes, datos y homologación. Mi trayectoria conecta tecnología y negocio con foco en confiabilidad, resolución de problemas y mejora continua.",
-
-"hero.button":
-"Conoce mi trayectoria →",
-
-
-"profile.photoNote":
-"Foto cargada directamente desde el perfil de GitHub",
-
-"profile.location":
-"Curitiba / Paraná",
-
-"profile.stat1":
-"de experiencia profesional en TI",
-
-"profile.stat2":
-"soporte de sistemas, datos y análisis de sistemas",
-
-"profile.stat3Title":
-"Visión de extremo a extremo",
-
-"profile.stat3":
-"desde el soporte técnico hasta la evolución de sistemas",
-
-
-"about.eyebrow":
-"Sobre mí",
-
-"about.title":
-"Una carrera construida con experiencia práctica.",
-
-"about.description":
-"Mi trayectoria profesional evolucionó del Soporte Técnico N1/N2/N3 a desempeñarme como Analista de Sistemas, con experiencia en ERP, SQL Server, análisis de incidentes, datos y homologación. Esta experiencia me permite investigar problemas, comprender el impacto para el usuario y colaborar con equipos de desarrollo y áreas de negocio en la evolución y mejora de los sistemas corporativos.",
-
-
-"about.card1Title":
-"Soporte Técnico de Sistemas",
-
-"about.card1Text":
-"Diagnóstico y resolución de incidentes, soporte a aplicaciones corporativas, sistemas operativos, hardware y software.",
-
-"about.card2Title":
-"Análisis de Sistemas y ERP",
-
-"about.card2Text":
-"Análisis de requisitos, investigación de problemas, homologación y seguimiento de mejoras en sistemas corporativos.",
-
-"about.card3Title":
-"Datos y SQL",
-
-"about.card3Text":
-"Consultas y scripts SQL para la extracción, actualización, tratamiento y análisis de datos utilizando Microsoft SQL Server.",
-
-"about.card4Title":
-"Negocio y Tecnología",
-
-"about.card4Text":
-"Interfaz con usuarios y equipos de desarrollo, transformando demandas y evidencias en requisitos y soluciones.",
-
-
-"skills.eyebrow":
-"Competencias",
-
-"skills.title":
-"Conocimiento técnico con visión de entornos corporativos.",
-
-"skills.tech1Title":
-"Lenguajes",
-
-"skills.tech2Title":
-"Bases de Datos",
-
-"skills.tech3Title":
-"ERP & Aplicaciones",
-
-"skills.tech4Title":
-"CRM & Gestión",
-
-"skills.tech5Title":
-"Herramientas",
-
-"skills.tech6Title":
-"Control de Versiones",
-
-"skills.tech7Title":
-"IA & Productividad",
-
-"skills.tech8Title":
-"Metodologías",
-
-"skills.softTitle":
-"Competencias personales",
-
-"skills.tag1":
-"Pensamiento Analítico",
-
-"skills.tag2":
-"Resolución de Problemas",
-
-"skills.tag3":
-"Comunicación Asertiva",
-
-"skills.tag4":
-"Trabajo en Equipo",
-
-"skills.tag5":
-"Proactividad",
-
-"skills.tag6":
-"Mejora Continua",
-
-
-"career.eyebrow":
-"Trayectoria profesional",
-
-"career.title":
-"De Soporte Técnico a Analista de Sistemas.",
-
-"career.description":
-"Una evolución profesional basada en experiencia práctica, entornos corporativos y resolución de problemas.",
-
-"career.apolarTitle":
-"Analista de Sistemas · Apolar Imóveis",
-
-"career.apolar1":
-"Actuación en el soporte y evolución del ERP ApolarNet, realizando análisis de incidentes, correcciones y mejoras continuas en el sistema.",
-
-"career.apolar2":
-"Recopilación, análisis y tratamiento de datos para identificar inconsistencias.",
-
-"career.apolar3":
-"Desarrollo y optimización de consultas y scripts SQL utilizando Microsoft SQL Server.",
-
-"career.apolar4":
-"Validación de correcciones y nuevas funcionalidades antes de su publicación en producción.",
-
-"career.apolar5":
-"Interacción con usuarios y equipos de desarrollo para el análisis de requisitos y validación de soluciones.",
-
-"career.apolar6":
-"Documentación de evidencias y especificación de requisitos funcionales y técnicos utilizando Movidesk y Notion.",
-
-"career.boticarioTitle":
-"Analista de Soporte Técnico N1 · Premier IT · Cliente: Grupo Boticário",
-
-"career.boticario1":
-"Soporte remoto a tiendas y resolución de incidentes en sistemas de punto de venta.",
-
-"career.boticario2":
-"Atención telefónica y mediante Salesforce.",
-
-"career.boticario3":
-"Soporte para TOTVS, OmniShop, PDV Móvil, Linx y CliSiTef.",
-
-"career.boticario4":
-"Atención de incidentes relacionados con TEF, Pin Pad, impresoras fiscales y conectividad.",
-
-"career.boticario5":
-"Actuación como Backup Focal y apoyo en la validación de tickets.",
-
-"career.boticarioTitle":
-"Analista de Soporte Técnico N2 · Netnews Servicios de Informática",
-
-"career.netnews1":
-"Diagnóstico y resolución de incidentes de hardware y software.",
-
-"career.netnews2":
-"Mantenimiento preventivo y correctivo de desktops y notebooks.",
-
-"career.netnews3":
-"Instalación y configuración de Windows y aplicaciones corporativas.",
-
-"career.netnews4":
-"Copia de seguridad y recuperación de datos.",
-
-"career.stefaniniTitle":
-"Analista de Soporte Técnico N2 · Stefanini IT Solutions · Cliente: BRF S.A.",
-
-"career.stefanini1":
-"Soporte N2 para estaciones de trabajo y sistemas corporativos.",
-
-"career.stefanini2":
-"Soporte remoto para las unidades de Comfrio.",
-
-"career.stefanini3":
-"Preparación de entornos de prueba, creación de imágenes de Windows y ejecución de pruebas de homologación.",
-
-"career.stefanini4":
-"Seguimiento de la implementación de software y equipos.",
-
-"career.premierTitle":
-"Analista de Soporte Técnico N3 · Premier IT Global Services",
-
-"career.premier1":
-"Soporte N3 para hardware, software y sistemas Windows y Linux.",
-
-"career.premier2":
-"Administración de Active Directory, usuarios y permisos.",
-
-"career.premier3":
-"Instalación y configuración de equipos y aplicaciones corporativas.",
-
-"career.premier4":
-"Soporte técnico a analistas N1 y N2 y asistencia remota.",
-
-
-"impact.eyebrow":
-"Mi diferencial",
-
-"impact.title":
-"Lo que aporto a un equipo de tecnología.",
-
-"impact.card1":
-"años de experiencia en TI",
-
-"impact.card2_title":
-"Soporte Técnico N1 → N2 → N3 → Analista de Sistemas",
-
-"impact.card2_text":
-"Evolución profesional construida a lo largo de más de 20 años en diferentes niveles de actuación.",
-
-"impact.card3":
-"Experiencia práctica en análisis de sistemas, datos, soporte y evolución de aplicaciones corporativas.",
-
-
-"cases.eyebrow":
-"Casos profesionales",
-
-"cases.title":
-"Cómo mi experiencia se transforma en valor.",
-
-"cases.case1Label":
-"CASO 01 · SOPORTE Y EVOLUCIÓN DE ERP",
-
-"cases.case1Title":
-"Investigación de incidentes en ApolarNet",
-
-"cases.case1Text":
-"Actuación en el análisis de incidentes e inconsistencias, utilizando investigación técnica y datos de SQL Server para apoyar la identificación de causas y la definición de correcciones y mejoras.",
-
-"cases.case2Label":
-"CASO 02 · SQL SERVER Y DATOS",
-
-"cases.case2Title":
-"Datos para apoyar procesos de negocio",
-
-"cases.case2Text":
-"Creación y optimización de consultas y scripts SQL para extracción, actualización, tratamiento y análisis de datos, apoyando áreas de negocio e informes.",
-
-"cases.case3Label":
-"CASO 03 · HOMOLOGACIÓN DE SISTEMAS",
-
-"cases.case3Title":
-"Validación antes de producción",
-
-"cases.case3Text":
-"Experiencia en preparar escenarios, ejecutar pruebas y validar correcciones y nuevas funcionalidades, contribuyendo a reducir riesgos antes de la publicación.",
-
-"cases.case4Label":
-"CASO 04 · REQUISITOS Y ANÁLISIS DE SISTEMAS",
-
-"cases.case4Title":
-"Conectando usuarios y desarrollo",
-
-"cases.case4Text":
-"Análisis técnico de demandas, registro de evidencias y documentación de requisitos funcionales y técnicos para facilitar la comunicación con el equipo de desarrollo.",
-
-
-"education.eyebrow":
-"Formación & aprendizaje",
-
-"education.title":
-"Experiencia sólida con actualización constante.",
-
-"education.card1Eyebrow":
-"Formación académica",
-
-"education.card1Title":
-"Tecnólogo en Procesamiento de Datos",
-
-"education.card1Text":
-"UNOPAR · Finalización en 2005",
-
-"education.card2Title":
-"Python desde Cero hasta Inteligencia Artificial",
-
-"education.card3Title":
-"SQL para Análisis de Datos: Básico a Avanzado",
-
-"education.card4Title":
-"Microsoft Copilot AI",
-
-"education.card5Title":
-"Java Completo: POO + Proyectos",
-
-"education.card6Eyebrow":
-"Idiomas",
-
-"education.card6Title":
-"Inglés & Español",
-
-"education.card6Text":
-"Inglés: nivel intermedio en lectura/escritura y básico en conversación. Español: básico.",
-
-
-"contact.eyebrow":
-"¿Hablamos?",
-
-"contact.title":
-"Estoy abierto a nuevos desafíos profesionales.",
-
-"contact.description":
-"Busco oportunidades como Analista de Sistemas, Analista de Soporte Técnico de Sistemas o en funciones relacionadas con ERP, SQL Server y soporte a aplicaciones corporativas, contribuyendo con mi experiencia práctica, capacidad analítica y enfoque en la resolución de problemas.",
-
-"contact.email":
-"Enviar correo",
-
-
-"footer.copyright":
-"© 2026 Gustavo Henrique Schiavinato Rezende · Curitiba / Paraná ·"
-
-}
-
-};
-
-
-/* =====================================================
-   FUNÇÃO DE TROCA DE IDIOMA
-===================================================== */
-
-function changeLanguage(lang){
-
-
-    if(!translations[lang]){
-
-        lang="pt";
-
-    }
-
-
-    /*
-     * Atualiza todos os elementos
-     * que possuem data-i18n
-     */
-
-    document
-        .querySelectorAll("[data-i18n]")
-        .forEach(
-            function(element){
-
-                const key =
-                    element
-                    .getAttribute(
-                        "data-i18n"
-                    );
-
-
-                if(
-                    translations[lang] &&
-                    translations[lang][key] !== undefined
-                ){
-
-                    element.textContent =
-                        translations[lang][key];
-
-                }
-
-            }
-        );
-
-
-    /*
-     * Atualiza idioma ativo
-     */
-
-    document
-        .querySelectorAll(
-            ".language-button"
-        )
-        .forEach(
-            function(button){
-
-                button.classList.remove(
-                    "active"
-                );
-
-            }
-        );
-
-
-    const activeButton =
-        document.querySelector(
-            `.language-button[data-lang="${lang}"]`
-        );
-
-
-    if(activeButton){
-
-        activeButton.classList.add(
-            "active"
-        );
-
-    }
-
-
-    /*
-     * Atualiza atributo lang
-     */
-
-    document.documentElement.lang =
-        lang === "pt"
-            ? "pt-BR"
-            : lang;
-
-
-    /*
-     * Atualiza título da página
-     */
-
-    const titles = {
-
-        pt:
-        "Gustavo Schiavinato | Analista de Suporte Técnico de Sistemas & Analista de Sistemas",
-
-        en:
-        "Gustavo Schiavinato | Systems Analyst & Systems Support",
-
-        es:
-        "Gustavo Schiavinato | Analista de Sistemas & Soporte"
-
-    };
-
-
-    document.title =
-        titles[lang];
-
-
-    /*
-     * Salva preferência
-     */
-
-    localStorage.setItem(
-        "portfolio-language",
-        lang
-    );
-
-}
-
-
-/* =====================================================
-   EVENTOS DOS BOTÕES
-===================================================== */
-
-document
-    .querySelectorAll(
-        ".language-button"
-    )
-    .forEach(
-        function(button){
-
-            button.addEventListener(
-                "click",
-                function(){
-
-                    const lang =
-                        this.getAttribute(
-                            "data-lang"
-                        );
-
-                    changeLanguage(
-                        lang
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-/* =====================================================
-   IDIOMA INICIAL
-===================================================== */
-
-const savedLanguage =
-    localStorage.getItem(
-        "portfolio-language"
-    );
-
-
-/*
- * Português é o idioma padrão
- * caso não exista preferência salva
- */
-
-changeLanguage(
-    savedLanguage || "pt"
-);I
-
-
-});
-
-</script>
 
 </body>
+
+
 
 </html>
