@@ -1357,7 +1357,7 @@ footer p {
         60px;
 
     margin-bottom:
-        16px;
+        5px;
 
     display:
         flex;
@@ -1382,7 +1382,7 @@ footer p {
         var(--primary);
 
     font-size:
-        1.6rem;
+        1.8rem;
 
     font-weight:
         800;
@@ -2258,10 +2258,10 @@ footer p {
 .education-icon {
 
     width:
-        58px;
+        88px;
 
     height:
-        58px;
+        88px;
 
     flex-shrink:
         0;
@@ -2289,7 +2289,7 @@ footer p {
         var(--primary);
 
     font-size:
-        0.9rem;
+        2rem;
 
     font-weight:
         800;
@@ -2457,7 +2457,7 @@ footer p {
         var(--primary);
 
     font-size:
-        0.72rem;
+        1.2rem;
 
     font-weight:
         800;
@@ -2805,7 +2805,7 @@ footer p {
         var(--primary);
 
     font-size:
-        0.72rem;
+        1.2rem;
 
     font-weight:
         800;
