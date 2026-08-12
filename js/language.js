@@ -80,6 +80,12 @@ const translations = {
         skills_title:
             "Conhecimentos e Tecnologias",
 
+       career_label:
+            "CARREIRA",
+
+       career_title:
+            "Trajetória Profissional",
+
         career_apolar_title:
             "Analista de Sistemas",
 
@@ -147,7 +153,7 @@ const translations = {
             "CASES",
 
         cases_title:
-            "Cases de destaque",
+            "Cases de Destaque",
 
 
         case_incidents_category:
@@ -194,7 +200,7 @@ const translations = {
             "FORMAÇÃO",
 
         education_title:
-            "Formação e certificações",
+            "Formação e Certificações",
 
         education_degree:
             "Tecnologia em Processamento de Dados – Graduação",
@@ -313,7 +319,13 @@ const translations = {
             "SKILLS",
 
         skills_title:
-            "Knowledge and technologies",
+            "Knowledge and Technologies",
+
+       career_label:
+            "CAREER",
+
+       career_title:
+            "Professional Journey",
 
         career_apolar_title:
             "Systems Analyst",
@@ -429,7 +441,7 @@ const translations = {
             "EDUCATION",
 
         education_title:
-            "Education and certifications",
+            "Education and Certifications",
 
         education_degree:
             "Data Processing Technology – Bachelor's Degree",
@@ -547,7 +559,13 @@ const translations = {
             "COMPETENCIAS",
 
         skills_title:
-            "Conocimientos y tecnologías",
+            "Conocimientos y Tecnologías",
+
+       career_label:
+            "CARRERA",
+
+       career_title:
+            "Trayectoria Profesional",
 
         career_apolar_title:
             "Analista de Sistemas",
@@ -616,7 +634,7 @@ const translations = {
             "CASOS",
 
         cases_title:
-            "Casos destacados",
+            "Casos Destacados",
 
 
         case_incidents_category:
@@ -663,7 +681,7 @@ const translations = {
             "FORMACIÓN",
 
         education_title:
-            "Formación y certificaciones",
+            "Formación y Certificaciones",
 
         education_degree:
             "Tecnología en Procesamiento de Datos – Grado Universitario",
