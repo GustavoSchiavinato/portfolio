@@ -206,13 +206,13 @@ const translations = {
             "Tecnologia em Processamento de Dados – Graduação",
 
         education_completion:
-            "Conclusão em 2005",
+            "Conclusão em 2004",
 
         education_postgraduate:
             "Inteligência Artificial e Machine Learning – Pós-graduação",
 
         education_postgraduate_status:
-            "Em andamento",
+            "Conclusão em 2026",
 
         course_python:
             "Python do Zero a Inteligência Artificial",
@@ -447,13 +447,13 @@ const translations = {
             "Data Processing Technology – Bachelor's Degree",
 
         education_completion:
-            "Completed in 2005",
+            "Completed in 2004",
 
         education_postgraduate:
             "Artificial Intelligence and Machine Learning – Postgraduate Degree",
 
         education_postgraduate_status:
-            "In progress",
+            "Completed in 2026",
 
         course_python:
             "Python from Zero to Artificial Intelligence",
@@ -687,13 +687,13 @@ const translations = {
             "Tecnología en Procesamiento de Datos – Grado Universitario",
 
         education_completion:
-            "Finalización en 2005",
+            "Finalización en 2004",
 
         education_postgraduate:
             "Inteligencia Artificial y Machine Learning – Posgrado",
 
         education_postgraduate_status:
-            "En curso",
+            "Finalización en 2026",
         course_python:
             "Python desde Cero hasta Inteligencia Artificial",
 
