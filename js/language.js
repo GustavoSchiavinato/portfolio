@@ -90,7 +90,7 @@ const translations = {
             "Apolar Imóveis",
 
         career_apolar_description:
-            "Atuação na análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento, além de suporte ao ERP ApolarNet com análise de inconsistências utilizando SQL Server para identificação de causas e definição de soluções.",
+            "Atuação na análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento, além de suporte ao ERP (ApolarNet) com análise de inconsistências utilizando SQL Server para identificação de causas e definição de soluções.",
 
         career_boticario_title:
             "Analista de Suporte Técnico N1",
