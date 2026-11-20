@@ -39,7 +39,7 @@ const translations = {
             "Analista de Sistemas",
 
         hero_description:
-            "Analista de Suporte Técnico de Sistemas com mais de 20 anos de experiência em suporte a ambientes corporativos, aplicações, hardware, software e sistemas operacionais. Experiência de 2 anos e 6 meses como Analista de Sistemas, atuando com ERP, Microsoft SQL Server (SSMS), análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento.",
+            "Analista de Sistemas com experiência em ERP, SQL Server, análise e tratamento de dados e homologação, respaldado por mais de 20 anos em Suporte Técnico em TI, formado em Tecnologia em Processamento de Dados (2004) e pós-graduado em IA e Machine Learning (2026).",
 
        btn_contact:
             "Vamos conversar",
@@ -277,7 +277,7 @@ const translations = {
             "Systems Analyst",
 
         hero_description:
-            "Technical Systems Support Analyst with more than 20 years of experience supporting corporate environments, applications, hardware, software and operating systems. 2 years and 6 months of experience as a Systems Analyst, working with ERP, Microsoft SQL Server (SSMS), incident analysis and resolution, system testing and validation, data gathering and processing, SQL query development, functional documentation and support for development teams.",
+            "Systems Analyst with experience in ERP, SQL Server, data analysis and processing, and system testing/homologation, backed by over 20 years in IT Technical Support, holding a degree in Data Processing Technology (2004) and a postgraduate degree in AI and Machine Learning (2026).",
 
        btn_contact:
             "Let's talk",
@@ -514,7 +514,7 @@ const translations = {
             "Analista de Sistemas",
 
         hero_description:
-            "Analista de Soporte Técnico de Sistemas con más de 20 años de experiencia en soporte de entornos corporativos, aplicaciones, hardware, software y sistemas operativos. 2 años y 6 meses de experiencia como Analista de Sistemas, trabajando con ERP, Microsoft SQL Server (SSMS), análisis y resolución de incidentes, homologación de sistemas, recopilación y tratamiento de datos, desarrollo de consultas SQL, documentación funcional y apoyo a los equipos de desarrollo.",
+            "Analista de Sistemas con experiencia en ERP, SQL Server, análisis y tratamiento de datos y homologación, respaldado por más de 20 años en Soporte Técnico de TI, graduado en Tecnología en Procesamiento de Datos (2004) y posgrado en IA y Machine Learning (2026).",
 
        btn_contact:
             "Hablemos",
