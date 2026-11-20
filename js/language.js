@@ -90,7 +90,7 @@ const translations = {
             "Apolar Imóveis",
 
         career_apolar_description:
-            "Atuação na análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento.",
+            "Atuação na análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento, além de suporte ao ERP ApolarNet com análise de inconsistências utilizando SQL Server para identificação de causas e definição de soluções.",
 
         career_boticario_title:
             "Analista de Suporte Técnico N1",
@@ -154,13 +154,13 @@ const translations = {
 
 
         case_incidents_category:
-            "ERP APOLAR",
+            "ERP (APOLARNET)",
 
         case_incidents_title:
             "Investigação de Incidentes",
 
         case_incidents_description:
-            "Análise de inconsistências no ERP ApolarNet utilizando SQL Server para identificação de causas e definição de soluções.",
+            "Análise de inconsistências no ERP (ApolarNet) utilizando SQL Server para identificação de causas e definição de soluções.",
 
 
         case_data_category:
@@ -328,7 +328,7 @@ const translations = {
             "Apolar Real Estate",
 
         career_apolar_description:
-            "Responsible for incident analysis and resolution, system testing and validation, data gathering and processing, SQL query development, functional documentation, and support for development teams.",
+            "Incident analysis and resolution, system testing/homologation, data gathering and processing, SQL query development, functional documentation, and support to development teams, in addition to ERP (ApolarNet) support with inconsistency analysis using SQL Server to identify root causes and define solutions.",
 
         career_boticario_title:
             "L1 Technical Support Analyst",
@@ -392,13 +392,13 @@ const translations = {
 
 
         case_incidents_category:
-            "APOLAR ERP",
+            "ERP (APOLARNET)",
 
         case_incidents_title:
             "Incident Investigation",
 
         case_incidents_description:
-            "Analysis of inconsistencies in the ApolarNet ERP using SQL Server to identify root causes and define solutions.",
+            "Analysis of inconsistencies in the ERP (ApolarNet) using SQL Server to identify root causes and define solutions.",
 
 
         case_data_category:
@@ -565,7 +565,7 @@ const translations = {
             "Apolar Inmobiliaria",
 
         career_apolar_description:
-            "Responsable del análisis y resolución de incidentes, homologación de sistemas, recopilación y tratamiento de datos, desarrollo de consultas SQL, documentación funcional y apoyo a los equipos de desarrollo.",
+            "Análisis y resolución de incidentes, homologación de sistemas, levantamiento y tratamiento de datos, desarrollo de consultas SQL, documentación funcional y apoyo a los equipos de desarrollo, además de soporte al ERP (ApolarNet) con análisis de inconsistencias utilizando SQL Server para identificar causas y definir soluciones.",
 
         career_boticario_title:
             "Analista de Soporte Técnico N1",
@@ -629,13 +629,13 @@ const translations = {
 
 
         case_incidents_category:
-            "ERP APOLAR",
+            "ERP (APOLARNET)",
 
         case_incidents_title:
             "Investigación de Incidentes",
 
         case_incidents_description:
-            "Análisis de inconsistencias en el ERP ApolarNet utilizando SQL Server para identificar las causas y definir soluciones.",
+            "Análisis de inconsistencias en el ERP (ApolarNet) utilizando SQL Server para identificar las causas y definir soluciones.",
 
 
         case_data_category:
