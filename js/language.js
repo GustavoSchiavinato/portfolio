@@ -33,10 +33,10 @@ const translations = {
             "Contato",
 
         hero_role:
-            "ANALISTA DE SUPORTE TÉCNICO DE SISTEMAS",
+            "ANALISTA DE SISTEMAS | ERP | SQL SERVER | SUPORTE TÉCNICO DE SISTEMAS",
 
         hero_title:
-            "Analista de Suporte Técnico de Sistemas",
+            "ANALISTA DE SISTEMAS | ERP | SQL SERVER | SUPORTE TÉCNICO DE SISTEMAS",
 
         hero_description:
             "Analista de Suporte Técnico de Sistemas com mais de 20 anos de experiência em suporte a ambientes corporativos, aplicações, hardware, software e sistemas operacionais. Experiência de 2 anos e 6 meses como Analista de Sistemas, atuando com ERP, Microsoft SQL Server (SSMS), análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento.",
@@ -274,10 +274,10 @@ const translations = {
             "Contact",
 
         hero_role:
-            "TECHNICAL SYSTEMS SUPPORT ANALYST",
+            "SYSTEMS ANALYST | ERP | SQL SERVER | SYSTEMS TECHNICAL SUPPORT",
 
         hero_title:
-            "Technical Systems Support Analyst",
+            "SYSTEMS ANALYST | ERP | SQL SERVER | SYSTEMS TECHNICAL SUPPORT",
 
         hero_description:
             "Technical Systems Support Analyst with more than 20 years of experience supporting corporate environments, applications, hardware, software and operating systems. 2 years and 6 months of experience as a Systems Analyst, working with ERP, Microsoft SQL Server (SSMS), incident analysis and resolution, system testing and validation, data gathering and processing, SQL query development, functional documentation and support for development teams.",
@@ -514,10 +514,10 @@ const translations = {
             "Contacto",
 
         hero_role:
-            "ANALISTA DE SOPORTE TÉCNICO DE SISTEMAS",
+            "ANALISTA DE SISTEMAS | ERP | SQL SERVER | SOPORTE TÉCNICO DE SISTEMAS",
 
         hero_title:
-            "Analista de Soporte Técnico de Sistemas",
+            "ANALISTA DE SISTEMAS | ERP | SQL SERVER | SOPORTE TÉCNICO DE SISTEMAS",
 
         hero_description:
             "Analista de Soporte Técnico de Sistemas con más de 20 años de experiencia en soporte de entornos corporativos, aplicaciones, hardware, software y sistemas operativos. 2 años y 6 meses de experiencia como Analista de Sistemas, trabajando con ERP, Microsoft SQL Server (SSMS), análisis y resolución de incidentes, homologación de sistemas, recopilación y tratamiento de datos, desarrollo de consultas SQL, documentación funcional y apoyo a los equipos de desarrollo.",
