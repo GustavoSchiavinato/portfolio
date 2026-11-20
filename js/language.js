@@ -63,16 +63,13 @@ const translations = {
             "Perfil Profissional",
 
        about_description_1:
-            "Analista de Suporte Técnico de Sistemas com mais de 20 anos de experiência em suporte a ambientes corporativos, aplicações, hardware, software e sistemas operacionais.",
+            "Analista de Sistemas com 2 anos e 6 meses de experiência atuando com ERP, Microsoft SQL Server (SSMS), análise e tratamento de dados, homologação, documentação funcional e apoio ao desenvolvimento.",
 
        about_description_2:
-            "Experiência de 2 anos e 6 meses como Analista de Sistemas, atuando com ERP, Microsoft SQL Server (SSMS), análise e resolução de incidentes, homologação de sistemas, levantamento e tratamento de dados, desenvolvimento de consultas SQL, documentação funcional e apoio às equipes de desenvolvimento.",
+            "Mais de 20 anos de experiência em TI, suporte técnico a ambientes corporativos, infraestrutura, sistemas de varejo/PDV/TEF (TOTVS, Linx, CliSiTef), gestão de chamados (Movidesk, Salesforce), Notion e ITIL.",
 
        about_description_3:
-            "Vivência com ERP (ApolarNet e TOTVS), ferramentas de gestão de chamados e processos de melhoria contínua.",
-
-       about_description_4:
-            "Conhecimentos em Java, Python, APIs REST, Git, metodologias ágeis (Scrum e Kanban) e Inteligência Artificial, adquiridos por meio de cursos e treinamentos.",
+            "Pós-graduado em Inteligência Artificial e Machine Learning (2026), com base acadêmica em Java e estudos aplicados em Python, Git/GitHub e ferramentas de IA (ChatGPT, Microsoft Copilot, GitHub Copilot, Google Gemini e Google NotebookLM).",
 
         skills_label:
             "COMPETÊNCIAS",
@@ -304,16 +301,13 @@ const translations = {
             "Professional Profile",
 
        about_description_1:
-            "Systems Technical Support Analyst with over 20 years of experience supporting corporate environments, applications, hardware, software, and operating systems.",
+            "Systems Analyst with 2 years and 6 months of experience working with ERP, Microsoft SQL Server (SSMS), data analysis and processing, system testing/homologation, functional documentation, and development support.",
 
        about_description_2:
-            "2 years and 6 months of experience as a Systems Analyst, working with ERP systems, Microsoft SQL Server (SSMS), incident analysis and resolution, system testing and validation, data gathering and processing, SQL query development, functional documentation, and support for development teams.",
+            "Over 20 years of experience in IT, technical support for corporate environments, infrastructure, retail/POS/EFT systems (TOTVS, Linx, CliSiTef), ticket management (Movidesk, Salesforce), Notion, and ITIL.",
 
        about_description_3:
-            "Experience with ERP systems (ApolarNet and TOTVS), ticket management tools, and continuous improvement processes.",
-
-       about_description_4:
-            "Knowledge of Java, Python, REST APIs, Git, Agile methodologies (Scrum and Kanban), and Artificial Intelligence, acquired through courses and professional training.",
+            "Postgraduate degree in Artificial Intelligence and Machine Learning (2026), with an academic foundation in Java and applied studies in Python, Git/GitHub, and AI tools (ChatGPT, Microsoft Copilot, GitHub Copilot, Google Gemini, and Google NotebookLM).",
 
         skills_label:
             "SKILLS",
@@ -544,16 +538,13 @@ const translations = {
             "Perfil Profesional",
 
        about_description_1:
-            "Analista de Soporte Técnico de Sistemas con más de 20 años de experiencia en soporte a entornos corporativos, aplicaciones, hardware, software y sistemas operativos.",
+            "Analista de Sistemas con 2 años y 6 meses de experiencia trabajando con ERP, Microsoft SQL Server (SSMS), análisis y tratamiento de datos, homologación de sistemas, documentación funcional y apoyo al desarrollo.",
 
        about_description_2:
-            "2 años y 6 meses de experiencia como Analista de Sistemas, trabajando con sistemas ERP, Microsoft SQL Server (SSMS), análisis y resolución de incidentes, homologación de sistemas, recopilación y tratamiento de datos, desarrollo de consultas SQL, documentación funcional y apoyo a los equipos de desarrollo.",
+            "Más de 20 años de experiencia en TI, soporte técnico a entornos corporativos, infraestructura, sistemas de retail/PDV/TEF (TOTVS, Linx, CliSiTef), gestión de tickets (Movidesk, Salesforce), Notion e ITIL.",
 
        about_description_3:
-            "Experiencia con sistemas ERP (ApolarNet y TOTVS), herramientas de gestión de tickets y procesos de mejora continua.",
-
-       about_description_4:
-            "Conocimientos de Java, Python, APIs REST, Git, metodologías ágiles (Scrum y Kanban) e Inteligencia Artificial, adquiridos mediante cursos y capacitaciones profesionales.",
+            "Posgrado en Inteligencia Artificial y Machine Learning (2026), con base académica en Java y estudios aplicados en Python, Git/GitHub y herramientas de IA (ChatGPT, Microsoft Copilot, GitHub Copilot, Google Gemini y Google NotebookLM).",
 
         skills_label:
             "COMPETENCIAS",
